@@ -274,20 +274,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About The Oppenheim Group */}
+      {/* About The Vaultelle */}
       <section className="py-24 px-6 lg:px-12">
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="w-20 h-20 rounded-full border-2 border-red-600 flex items-center justify-center mb-8">
-                <span className="text-red-600 font-bold text-3xl">O</span>
+                <span className="text-red-600 font-bold text-3xl">V</span>
               </div>
               <p className="text-white text-sm leading-relaxed mb-8">
-                The Oppenheim Group is a leading luxury real estate brokerage serving Los Angeles, Orange County, 
-                San Diego, and Cabo San Lucas. Led by President and Founder Jason Oppenheim, the firm has achieved 
+                The Vaultelle is a leading luxury real estate brokerage serving Los Angeles, Orange County, 
+                San Diego, and Cabo San Lucas. Led by President and Founder Michael Vaultier, the firm has achieved 
                 $4.5 billion in total sales and $500 million in active listings, closing hundreds of deals annually, 
                 including numerous record-breaking transactions. With offices in West Hollywood, Newport Beach, San Diego, 
-                and Cabo San Lucas, The Oppenheim Group dominates the Southern California luxury market.
+                and Cabo San Lucas, The Vaultelle dominates the Southern California luxury market.
               </p>
               <Link
                 to="/about"
@@ -299,7 +299,7 @@ const Home = () => {
             <div>
               <img
                 src="https://images.pexels.com/photos/7580644/pexels-photo-7580644.jpeg"
-                alt="The Oppenheim Group Office"
+                alt="The Vaultelle Office"
                 className="w-full aspect-[4/3] object-cover"
               />
             </div>
