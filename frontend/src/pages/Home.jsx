@@ -264,9 +264,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-24 px-6 lg:px-12 bg-black">
-        <div className="max-w-[1920px] mx-auto">
+      {/* Stats Section with Parallax Background */}
+      <section 
+        className="py-32 px-6 lg:px-12 relative parallax-section" 
+        style={{ 
+          backgroundImage: `url('https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85')`,
+          backgroundAttachment: 'fixed',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/80"></div>
+        
+        <div className="max-w-[1920px] mx-auto relative z-10">
           <h2 className="text-white text-5xl font-light text-center mb-16">
             Why Work<br />
             <span className="font-bold">With Us</span>
