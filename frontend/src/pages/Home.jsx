@@ -209,17 +209,28 @@ const Home = () => {
       </section>
 
       {/* About Founder - with Parallax Background */}
-      <section className="py-24 px-6 lg:px-12 relative" style={{ backgroundColor: '#f5f5f5' }}>
-        <div className="max-w-[1920px] mx-auto">
+      <section 
+        className="py-32 px-6 lg:px-12 relative parallax-section" 
+        style={{ 
+          backgroundImage: `url('https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85')`,
+          backgroundAttachment: 'fixed',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-white/90"></div>
+        
+        <div className="max-w-[1920px] mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="parallax-image" data-speed="0.3">
+            <div>
               <img
                 src="https://images.unsplash.com/photo-1762341116674-784c5dbedeb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBlcnNvbnxlbnwwfHx8fDE3NjI3NjQxODB8MA&ixlib=rb-4.1.0&q=85"
                 alt="CEO & Founder"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[3/4] object-cover shadow-2xl"
               />
             </div>
-            <div className="bg-white p-12">
+            <div className="bg-white p-12 shadow-2xl">
               <div className="w-16 h-16 rounded-full border-2 border-red-600 flex items-center justify-center mb-8">
                 <span className="text-red-600 font-bold text-2xl">V</span>
               </div>
