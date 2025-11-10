@@ -43,6 +43,15 @@ img {
 .parallax-image {
   transform: translateY(0);
   will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+/* Parallax section backgrounds */
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Fade in animation */
@@ -59,4 +68,13 @@ img {
 
 .fade-in {
   animation: fadeIn 0.8s ease-out;
+}
+
+/* Smooth hover transitions for property cards */
+.property-card-hover {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.property-card-hover:hover {
+  transform: scale(1.02);
 }
