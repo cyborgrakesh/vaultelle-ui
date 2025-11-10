@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <div className="bg-black">
       {/* Hero Slider */}
-      <section className="relative h-screen">
+      <section className="relative h-screen mt-20">
         {heroSlides.map((slide, index) => (
           <div
             key={slide.id}
@@ -39,7 +39,7 @@ const Home = () => {
               alt={slide.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60" />
           </div>
         ))}
 
@@ -58,26 +58,26 @@ const Home = () => {
         </button>
 
         {/* Office Locations Overlay */}
-        <div className="absolute right-12 bottom-24 text-right z-10">
-          <p className="text-white text-xs tracking-[0.3em] mb-6">OUR OFFICES</p>
-          <div className="space-y-4">
-            <Link to="/offices/los-angeles" className="block text-white text-4xl font-light tracking-wider hover:text-red-600 transition-colors">
+        <div className="absolute right-12 bottom-20 text-right z-10">
+          <p className="text-white text-[10px] tracking-[0.4em] mb-8 font-light">OUR OFFICES</p>
+          <div className="space-y-3">
+            <Link to="/offices/los-angeles" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-red-600 transition-colors">
               LOS ANGELES
             </Link>
-            <Link to="/offices/newport-beach" className="block text-white text-4xl font-light tracking-wider hover:text-red-600 transition-colors">
+            <Link to="/offices/newport-beach" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-red-600 transition-colors">
               NEWPORT BEACH
             </Link>
-            <Link to="/offices/san-diego" className="block text-white text-4xl font-light tracking-wider hover:text-red-600 transition-colors">
+            <Link to="/offices/san-diego" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-red-600 transition-colors">
               SAN DIEGO
             </Link>
-            <Link to="/offices/cabo" className="block text-white text-4xl font-light tracking-wider hover:text-red-600 transition-colors">
+            <Link to="/offices/cabo" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-red-600 transition-colors">
               CABO SAN LUCAS
             </Link>
           </div>
         </div>
 
         {/* Scroll Down Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-xs tracking-widest z-10">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-[10px] tracking-[0.3em] z-10 font-light">
           <p className="animate-bounce">SCROLL DOWN</p>
         </div>
       </section>
