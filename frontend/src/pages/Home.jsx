@@ -192,47 +192,45 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Jason Oppenheim */}
-      <section className="py-24 px-6 lg:px-12">
+      {/* About Founder - with Parallax Effect */}
+      <section className="py-24 px-6 lg:px-12 relative overflow-hidden">
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div className="parallax-image" data-speed="0.5">
               <img
                 src="https://images.unsplash.com/photo-1762341116674-784c5dbedeb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBlcnNvbnxlbnwwfHx8fDE3NjI3NjQxODB8MA&ixlib=rb-4.1.0&q=85"
-                alt="Jason Oppenheim"
+                alt="CEO & Founder"
                 className="w-full aspect-[3/4] object-cover"
               />
             </div>
             <div>
               <div className="w-16 h-16 rounded-full border-2 border-red-600 flex items-center justify-center mb-8">
-                <span className="text-red-600 font-bold text-2xl">O</span>
+                <span className="text-red-600 font-bold text-2xl">V</span>
               </div>
               <p className="text-gray-400 text-xs tracking-[0.3em] mb-3">PRESIDENT & FOUNDER</p>
               <h2 className="text-white text-6xl font-light mb-8">
-                Jason<br />
-                <span className="font-bold">Oppenheim</span>
+                Michael<br />
+                <span className="font-bold">Vaultier</span>
               </h2>
               <div className="space-y-4 text-gray-300 text-sm leading-relaxed mb-8">
                 <p>
-                  As President and Founder of The Oppenheim Group, Jason leads a team responsible for
+                  As President and Founder of The Vaultelle, Michael leads a team responsible for
                   representing buyers and sellers of distinguished properties throughout Southern California.
                   He was recognized as the Best Real Estate Agent in the United States by the International
                   Property Awards and as the #1 real estate agent in the Hollywood Hills/West Hollywood by the
                   Wall Street Journal.
                 </p>
                 <p>
-                  Jason receives significant attention within the real estate community and beyond as a star
-                  of the three time Emmy nominated Netflix show Selling Sunset and Selling the OC, featuring
-                  his brokerage and agents as they sell luxury homes to their affluent and celebrity clients.
+                  Michael receives significant attention within the real estate community and beyond.
                   With more than $4.5 billion in closed sales, he currently has more than $500 million in
                   active listings and has achieved numerous record-breaking results for his clients.
                 </p>
               </div>
               <Link
-                to="/jason-oppenheim"
+                to="/agents"
                 className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
               >
-                LEARN MORE ABOUT JASON
+                LEARN MORE ABOUT MICHAEL
               </Link>
             </div>
           </div>
