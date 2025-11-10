@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -56,6 +56,14 @@ const Header = () => {
     { name: 'CONTACT US', href: '/contact' }
   ];
 
+  const handleMouseEnter = (itemName) => {
+    setActiveDropdown(itemName);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveDropdown(null);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black">
       <div className="max-w-[1920px] mx-auto px-6 lg:px-12">
@@ -65,7 +73,7 @@ const Header = () => {
             <div className="w-10 h-10 rounded-full border-2 border-red-600 flex items-center justify-center transition-transform group-hover:scale-110">
               <span className="text-red-600 font-bold text-xl">V</span>
             </div>
-            <span className="text-white text-[11px] tracking-[0.25em] font-light hidden md:block">THE VAULTELLE</span>
+            <span className="text-white text-[10px] tracking-[0.25em] font-light hidden md:block" style={{ letterSpacing: '0.25em' }}>THE VAULTELLE</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -73,28 +81,30 @@ const Header = () => {
             {navigation.map((item) => (
               <div
                 key={item.name}
-                className="relative group"
-                onMouseEnter={() => item.submenu && setActiveDropdown(item.name)}
-                onMouseLeave={() => setActiveDropdown(null)}
+                className="relative"
+                onMouseEnter={() => item.submenu && handleMouseEnter(item.name)}
+                onMouseLeave={handleMouseLeave}
               >
                 <Link
                   to={item.href}
-                  className="text-white text-[11px] tracking-[0.15em] font-light hover:text-red-600 transition-colors flex items-center gap-1"
+                  className="text-white text-[11px] tracking-[0.2em] font-normal hover:text-red-600 transition-colors flex items-center gap-1"
+                  style={{ fontWeight: '400', letterSpacing: '0.2em' }}
                 >
                   {item.name}
-                  {item.submenu && <ChevronDown className="w-3 h-3" />}
                 </Link>
                 {item.submenu && activeDropdown === item.name && (
-                  <div className="absolute top-full left-0 mt-2 bg-black border border-gray-800 min-w-[200px] py-2 shadow-xl">
-                    {item.submenu.map((subItem) => (
-                      <Link
-                        key={subItem.name}
-                        to={subItem.href}
-                        className="block px-4 py-2 text-white text-[11px] tracking-[0.1em] font-light hover:bg-red-600 transition-colors"
-                      >
-                        {subItem.name}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-0 pt-4">
+                    <div className="bg-black border border-gray-800 min-w-[220px] py-2 shadow-xl">
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.name}
+                          to={subItem.href}
+                          className="block px-6 py-3 text-white text-[11px] tracking-[0.15em] font-light hover:bg-red-600 hover:text-white transition-colors"
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
