@@ -438,7 +438,7 @@ const Home = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-white text-4xl font-light mb-8">
             Be A Part of the<br />
-            <span className="font-bold">Oppenheim Group Network</span>
+            <span className="font-bold">Vaultelle Network</span>
           </h2>
           <p className="text-gray-400 text-sm mb-8">
             Keep up-to-date with the latest market trends and opportunities in<br />
