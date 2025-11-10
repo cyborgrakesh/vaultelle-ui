@@ -518,9 +518,9 @@ const Home = () => {
                     <div className="absolute top-12 left-4 right-4 z-20">
                       <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 mb-2">
                         <input 
-                          type=\"text\" 
-                          placeholder=\"Search city, zip, address...\" 
-                          className=\"w-full bg-white/20 text-white text-xs px-3 py-2 rounded-lg placeholder-white/70\"
+                          type="text" 
+                          placeholder="Search city, zip, address..." 
+                          className="w-full bg-white/20 text-white text-xs px-3 py-2 rounded-lg placeholder-white/70"
                           disabled
                         />
                       </div>
