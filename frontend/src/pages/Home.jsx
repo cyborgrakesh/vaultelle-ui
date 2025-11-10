@@ -15,6 +15,23 @@ const Home = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Parallax Effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.pageYOffset;
+      const parallaxElements = document.querySelectorAll('.parallax-image');
+      
+      parallaxElements.forEach((element) => {
+        const speed = element.getAttribute('data-speed') || 0.5;
+        const yPos = -(scrolled * speed);
+        element.style.transform = `translateY(${yPos}px)`;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   };
