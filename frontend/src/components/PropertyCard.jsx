@@ -3,9 +3,9 @@ import { Bed, Bath, Maximize } from 'lucide-react';
 
 const PropertyCard = ({ property }) => {
   return (
-    <div className="group relative overflow-hidden bg-black cursor-pointer rounded-2xl">
-      {/* Image with overlay text */}
-      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+    <div className="group relative overflow-hidden bg-black cursor-pointer rounded-2xl h-full">
+      {/* Image with overlay text - Fixed Height */}
+      <div className="relative h-[450px] overflow-hidden rounded-2xl">
         <img
           src={property.image}
           alt={property.address}
