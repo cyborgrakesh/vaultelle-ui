@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, Plus, Play } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Plus, Play, Apple, Smartphone } from 'lucide-react';
 import PropertyCard from '../components/PropertyCard';
 import { heroSlides, properties, testimonials, mediaArticles } from '../mockData';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [conciergeSlider, setConciergeSlider] = useState(50);
 
   useEffect(() => {
@@ -41,6 +40,25 @@ const Home = () => {
     setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
 
+  const socialData = [
+    { name: 'The Vaultelle', followers: 606, color: '#c41e3a' },
+    { name: 'Serhant', followers: 547, color: '#888' },
+    { name: 'The Agency', followers: 507, color: '#888' },
+    { name: "Sotheby's", followers: 495, color: '#888' },
+    { name: "Christie's", followers: 320, color: '#888' },
+    { name: 'RE/MAX', followers: 250, color: '#888' },
+    { name: 'Savills', followers: 248, color: '#888' },
+    { name: 'Douglas Elliman', followers: 246, color: '#888' },
+    { name: 'Compass', followers: 221, color: '#888' },
+    { name: 'Knight Frank', followers: 203, color: '#888' },
+    { name: 'Hilton & Hyland', followers: 187, color: '#888' },
+    { name: 'The Corcoran Group', followers: 187, color: '#888' },
+    { name: 'Keller Williams', followers: 172, color: '#888' },
+    { name: 'Coldwell Banker', followers: 165, color: '#888' },
+  ];
+
+  const maxFollowers = Math.max(...socialData.map(d => d.followers));
+
   return (
     <div className="bg-black">
       {/* Hero Slider */}
@@ -61,7 +79,6 @@ const Home = () => {
           </div>
         ))}
 
-        {/* Slide Controls */}
         <button
           onClick={prevSlide}
           className="absolute left-8 top-1/2 -translate-y-1/2 text-white hover:text-red-600 transition-colors z-10"
@@ -75,7 +92,6 @@ const Home = () => {
           <ChevronRight className="w-12 h-12" />
         </button>
 
-        {/* Office Locations Overlay */}
         <div className="absolute right-12 bottom-20 text-right z-10">
           <p className="text-white text-[10px] tracking-[0.4em] mb-8 font-light">OUR OFFICES</p>
           <div className="space-y-3">
@@ -94,7 +110,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Scroll Down Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-[10px] tracking-[0.3em] z-10 font-light">
           <p className="animate-bounce">SCROLL DOWN</p>
         </div>
@@ -119,21 +134,18 @@ const Home = () => {
             </Link>
           </div>
 
-          {/* First Row - 2 Large Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
             {properties.slice(0, 2).map((property) => (
               <PropertyCard key={property.id} property={property} />
             ))}
           </div>
 
-          {/* Second Row - 3 Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             {properties.slice(2, 5).map((property) => (
               <PropertyCard key={property.id} property={property} />
             ))}
           </div>
 
-          {/* Third Row - 2 Large Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {properties.slice(5, 7).map((property) => (
               <PropertyCard key={property.id} property={property} />
@@ -142,73 +154,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Netflix Section */}
-      <section className="py-24 px-6 lg:px-12 bg-black">
-        <div className="max-w-[1920px] mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left: Awards & Accolades */}
-            <div className="space-y-12">
-              <div className="space-y-8">
-                <div>
-                  <p className="text-gray-400 text-sm mb-2">"TV's most addictive realty show"</p>
-                  <p className="text-gray-500 text-xs">- CNN</p>
-                </div>
-                <div>
-                  <p className="text-gray-400 text-sm mb-2">"ZEITGEIST-HIT"</p>
-                  <p className="text-gray-500 text-xs">- Variety</p>
-                </div>
-                <div>
-                  <p className="text-white text-base font-semibold mb-2">BEST LIFESTYLE SHOW WINNER</p>
-                  <p className="text-gray-400 text-sm">at the Critics Choice Awards</p>
-                </div>
-                <div>
-                  <p className="text-white text-base font-semibold mb-2">Nominated for Three Emmy Awards</p>
-                </div>
-                <div>
-                  <p className="text-white text-base font-semibold mb-2">Best Docu-Reality Series Winner</p>
-                  <p className="text-gray-400 text-sm">at the MTV Movies & TV Awards</p>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-white text-6xl font-light mb-4">
-                  Binge-<br />
-                  <span className="font-bold">Worthy</span>
-                </h3>
-                <p className="text-red-600 text-2xl font-semibold">Watch On Netflix</p>
-              </div>
-            </div>
-
-            {/* Right: Netflix Show Posters - Using placeholder images */}
-            <div className="grid grid-cols-2 gap-8">
-              <div className="relative group cursor-pointer">
-                <img 
-                  src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
-                  alt="Selling Sunset"
-                  className="w-full aspect-[2/3] object-cover rounded-lg"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-red-600 hover:bg-red-700 transition-colors py-4 px-6 flex items-center justify-center gap-3 rounded-b-lg">
-                  <Play className="w-5 h-5 text-white fill-white" />
-                  <span className="text-white text-sm tracking-[0.2em] font-light">PLAY THE TRAILER</span>
-                </div>
-              </div>
-              <div className="relative group cursor-pointer">
-                <img 
-                  src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
-                  alt="Selling the OC"
-                  className="w-full aspect-[2/3] object-cover rounded-lg"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-red-600 hover:bg-red-700 transition-colors py-4 px-6 flex items-center justify-center gap-3 rounded-b-lg">
-                  <Play className="w-5 h-5 text-white fill-white" />
-                  <span className="text-white text-sm tracking-[0.2em] font-light">PLAY THE TRAILER</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Founder - with Parallax Background */}
+      {/* About Founder - with Large Name on Left and Parallax Background */}
       <section 
         className="py-32 px-6 lg:px-12 relative parallax-section" 
         style={{ 
@@ -218,28 +164,33 @@ const Home = () => {
           backgroundSize: 'cover'
         }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-white/90"></div>
         
         <div className="max-w-[1920px] mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Large Name on Left */}
+            <div className="lg:col-span-4 flex flex-col">
+              <p className="text-gray-500 text-xs tracking-[0.3em] mb-4">PRESIDENT & FOUNDER</p>
+              <h2 className="text-red-800 font-light" style={{ fontSize: '8rem', lineHeight: '0.9', letterSpacing: '0.02em' }}>
+                MICHAEL
+              </h2>
+              <h2 className="text-red-800 font-bold" style={{ fontSize: '8rem', lineHeight: '0.9', letterSpacing: '0.02em' }}>
+                VAULTIER
+              </h2>
+            </div>
+
+            {/* Photo */}
+            <div className="lg:col-span-4">
               <img
                 src="https://images.unsplash.com/photo-1762341116674-784c5dbedeb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBlcnNvbnxlbnwwfHx8fDE3NjI3NjQxODB8MA&ixlib=rb-4.1.0&q=85"
                 alt="CEO & Founder"
                 className="w-full aspect-[3/4] object-cover shadow-2xl"
               />
             </div>
-            <div className="bg-white p-12 shadow-2xl">
-              <div className="w-16 h-16 rounded-full border-2 border-red-600 flex items-center justify-center mb-8">
-                <span className="text-red-600 font-bold text-2xl">V</span>
-              </div>
-              <p className="text-gray-500 text-xs tracking-[0.3em] mb-3">PRESIDENT & FOUNDER</p>
-              <h2 className="text-black text-6xl font-light mb-8">
-                Michael<br />
-                <span className="font-bold">Vaultier</span>
-              </h2>
-              <div className="space-y-4 text-gray-700 text-sm leading-relaxed mb-8">
+
+            {/* Text Content */}
+            <div className="lg:col-span-4 space-y-6">
+              <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
                 <p>
                   As President and Founder of The Vaultelle, Michael leads a team responsible for
                   representing buyers and sellers of distinguished properties throughout Southern California.
@@ -257,7 +208,7 @@ const Home = () => {
                 to="/agents"
                 className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
               >
-                LEARN MORE ABOUT MICHAEL
+                LEARN MORE ABOUT MICHAEL <Plus className="inline w-4 h-4 ml-2" />
               </Link>
             </div>
           </div>
@@ -274,7 +225,6 @@ const Home = () => {
           backgroundSize: 'cover'
         }}
       >
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/80"></div>
         
         <div className="max-w-[1920px] mx-auto relative z-10">
@@ -345,7 +295,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section - Updated with 3D product style */}
+      {/* CTA Section */}
       <section className="py-24 px-6 lg:px-12 relative overflow-hidden" style={{ backgroundColor: '#c41e3a' }}>
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -383,7 +333,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Concierge Section - Updated with before/after slider */}
+      {/* Concierge Section */}
       <section className="py-24 px-6 lg:px-12 bg-black">
         <div className="max-w-[1920px] mx-auto">
           <div className="text-center mb-16">
@@ -394,7 +344,6 @@ const Home = () => {
             <p className="text-red-600 text-sm tracking-[0.3em]">TOP-TIER SERVICES</p>
           </div>
 
-          {/* Before/After Slider */}
           <div className="max-w-4xl mx-auto mb-12">
             <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
               <img
@@ -487,7 +436,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* In The Media - Updated with white cards */}
+      {/* In The Media */}
       <section className="py-24 px-6 lg:px-12" style={{ backgroundColor: '#f5f5f5' }}>
         <div className="max-w-[1920px] mx-auto">
           <div className="text-center mb-16">
@@ -530,6 +479,105 @@ const Home = () => {
               READ MORE
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Download Our App Section */}
+      <section className="py-24 px-6 lg:px-12 bg-white">
+        <div className="max-w-[1920px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-gray-500 text-xs tracking-[0.3em] mb-4">AHEAD OF THE MARKET</p>
+              <h2 className="text-red-800 font-light mb-8" style={{ fontSize: '5rem', lineHeight: '0.9' }}>
+                DOWNLOAD<br />
+                <span className="font-bold">OUR APP</span>
+              </h2>
+              <p className="text-gray-700 text-sm leading-relaxed mb-8">
+                The Vaultelle mobile app provides the most thorough home search functionality and the
+                latest inventory directly from the MLS. Constant updates will always keep you ahead of the
+                market as you locate new homes for sale, upcoming open houses, and recently sold properties.
+              </p>
+              <div className="flex gap-4">
+                <a 
+                  href="#" 
+                  className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors"
+                >
+                  <Apple className="w-6 h-6" />
+                  <div className="text-left">
+                    <p className="text-xs">Download on the</p>
+                    <p className="text-sm font-semibold">App Store</p>
+                  </div>
+                </a>
+                <a 
+                  href="#" 
+                  className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors"
+                >
+                  <Smartphone className="w-6 h-6" />
+                  <div className="text-left">
+                    <p className="text-xs">GET IT ON</p>
+                    <p className="text-sm font-semibold">Google Play</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
+                  alt="App Screenshot"
+                  className="w-[280px] rounded-3xl shadow-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Let's Get Social Section */}
+      <section className="py-24 px-6 lg:px-12" style={{ backgroundColor: '#f5f5f5' }}>
+        <div className="max-w-[1920px] mx-auto">
+          <h2 className="text-center mb-16">
+            <span className="text-black font-light text-6xl">LET'S GET </span>
+            <span className="text-red-800 font-bold text-6xl">SOCIAL</span>
+          </h2>
+
+          {/* Bar Chart */}
+          <div className="flex items-end justify-center gap-4 mb-12 h-[400px]">
+            {socialData.map((company, index) => {
+              const height = (company.followers / maxFollowers) * 100;
+              return (
+                <div key={index} className="flex flex-col items-center gap-2" style={{ width: '70px' }}>
+                  <div className="text-gray-700 text-xs font-semibold mb-2">{company.followers}K+</div>
+                  <div 
+                    className="w-full transition-all duration-1000 ease-out relative group"
+                    style={{ 
+                      height: `${height}%`,
+                      backgroundColor: company.color,
+                      minHeight: '40px'
+                    }}
+                  >
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                  </div>
+                  <div 
+                    className="text-xs text-gray-700 font-semibold text-center leading-tight" 
+                    style={{ 
+                      writingMode: 'vertical-rl',
+                      transform: 'rotate(180deg)',
+                      height: '100px',
+                      display: 'flex',
+                      alignItems: 'center'
+                    }}
+                  >
+                    {company.name}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <p className="text-center text-gray-700 text-sm max-w-3xl mx-auto">
+            THE VAULTELLE HAS <span className="font-bold">MORE FOLLOWERS ON INSTAGRAM THAN ANY OTHER REAL ESTATE BROKERAGE</span> IN THE WORLD.
+          </p>
         </div>
       </section>
 
