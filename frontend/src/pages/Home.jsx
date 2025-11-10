@@ -142,8 +142,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Netflix Section - Updated with proper styling */}
-      <section className="py-24 px-6 lg:px-12 bg-gradient-to-b from-black via-gray-950 to-black">
+      {/* Netflix Section */}
+      <section className="py-24 px-6 lg:px-12 bg-black">
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left: Awards & Accolades */}
@@ -179,30 +179,28 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right: Netflix Show Posters */}
+            {/* Right: Netflix Show Posters - Using placeholder images */}
             <div className="grid grid-cols-2 gap-8">
               <div className="relative group cursor-pointer">
-                <div className="aspect-[2/3] bg-gradient-to-br from-blue-400 via-teal-300 to-orange-200 rounded-lg overflow-hidden">
-                  <div className="absolute inset-0 flex flex-col items-center justify-end p-8 bg-gradient-to-t from-black/80 via-transparent to-transparent">
-                    <h4 className="text-white text-3xl font-bold mb-2 tracking-wider">SELLING</h4>
-                    <h4 className="text-yellow-400 text-3xl font-bold mb-6 tracking-wider">SUNSET</h4>
-                    <div className="w-full bg-red-600 hover:bg-red-700 transition-colors py-4 px-6 flex items-center justify-center gap-3 rounded">
-                      <Play className="w-5 h-5 text-white fill-white" />
-                      <span className="text-white text-sm tracking-[0.2em] font-light">PLAY THE TRAILER</span>
-                    </div>
-                  </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
+                  alt="Selling Sunset"
+                  className="w-full aspect-[2/3] object-cover rounded-lg"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-red-600 hover:bg-red-700 transition-colors py-4 px-6 flex items-center justify-center gap-3 rounded-b-lg">
+                  <Play className="w-5 h-5 text-white fill-white" />
+                  <span className="text-white text-sm tracking-[0.2em] font-light">PLAY THE TRAILER</span>
                 </div>
               </div>
               <div className="relative group cursor-pointer">
-                <div className="aspect-[2/3] bg-gradient-to-br from-pink-300 via-purple-200 to-blue-300 rounded-lg overflow-hidden">
-                  <div className="absolute inset-0 flex flex-col items-center justify-end p-8 bg-gradient-to-t from-black/80 via-transparent to-transparent">
-                    <h4 className="text-white text-3xl font-bold mb-2 tracking-wider">SELLING</h4>
-                    <h4 className="text-yellow-400 text-2xl font-bold mb-6 tracking-wider">THE OC</h4>
-                    <div className="w-full bg-red-600 hover:bg-red-700 transition-colors py-4 px-6 flex items-center justify-center gap-3 rounded">
-                      <Play className="w-5 h-5 text-white fill-white" />
-                      <span className="text-white text-sm tracking-[0.2em] font-light">PLAY THE TRAILER</span>
-                    </div>
-                  </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
+                  alt="Selling the OC"
+                  className="w-full aspect-[2/3] object-cover rounded-lg"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-red-600 hover:bg-red-700 transition-colors py-4 px-6 flex items-center justify-center gap-3 rounded-b-lg">
+                  <Play className="w-5 h-5 text-white fill-white" />
+                  <span className="text-white text-sm tracking-[0.2em] font-light">PLAY THE TRAILER</span>
                 </div>
               </div>
             </div>
