@@ -7,6 +7,7 @@ import { heroSlides, properties, testimonials, mediaArticles } from '../mockData
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [conciergeSlider, setConciergeSlider] = useState(50);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -141,82 +142,67 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Netflix Section */}
-      <section className="py-24 px-6 lg:px-12 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black opacity-50" />
-        <div className="max-w-[1920px] mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Awards & Quotes */}
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="text-white">
-                    <p className="text-sm">"TV's most addictive realty show"</p>
-                    <p className="text-xs text-gray-400 mt-1">- CNN</p>
-                  </div>
+      {/* Netflix Section - Updated with proper styling */}
+      <section className="py-24 px-6 lg:px-12 bg-gradient-to-b from-black via-gray-950 to-black">
+        <div className="max-w-[1920px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left: Awards & Accolades */}
+            <div className="space-y-12">
+              <div className="space-y-8">
+                <div>
+                  <p className="text-gray-400 text-sm mb-2">"TV's most addictive realty show"</p>
+                  <p className="text-gray-500 text-xs">- CNN</p>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="text-white">
-                    <p className="text-sm">"ZEITGEIST-HIT"</p>
-                    <p className="text-xs text-gray-400 mt-1">- Variety</p>
-                  </div>
+                <div>
+                  <p className="text-gray-400 text-sm mb-2">"ZEITGEIST-HIT"</p>
+                  <p className="text-gray-500 text-xs">- Variety</p>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="text-white">
-                    <p className="text-sm font-semibold">BEST LIFESTYLE SHOW WINNER</p>
-                    <p className="text-xs text-gray-400 mt-1">at the Critics Choice Awards</p>
-                  </div>
+                <div>
+                  <p className="text-white text-base font-semibold mb-2">BEST LIFESTYLE SHOW WINNER</p>
+                  <p className="text-gray-400 text-sm">at the Critics Choice Awards</p>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="text-white">
-                    <p className="text-sm font-semibold">Nominated for Three Emmy Awards</p>
-                  </div>
+                <div>
+                  <p className="text-white text-base font-semibold mb-2">Nominated for Three Emmy Awards</p>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="text-white">
-                    <p className="text-sm font-semibold">Best Docu-Reality Series Winner</p>
-                    <p className="text-xs text-gray-400 mt-1">at the MTV Movies & TV Awards</p>
-                  </div>
+                <div>
+                  <p className="text-white text-base font-semibold mb-2">Best Docu-Reality Series Winner</p>
+                  <p className="text-gray-400 text-sm">at the MTV Movies & TV Awards</p>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-white text-4xl font-light mb-4">
+                <h3 className="text-white text-6xl font-light mb-4">
                   Binge-<br />
                   <span className="font-bold">Worthy</span>
                 </h3>
-                <p className="text-red-600 text-xl font-semibold">Watch On Netflix</p>
+                <p className="text-red-600 text-2xl font-semibold">Watch On Netflix</p>
               </div>
             </div>
 
-            {/* Right: Show Posters */}
-            <div className="grid grid-cols-2 gap-6">
+            {/* Right: Netflix Show Posters */}
+            <div className="grid grid-cols-2 gap-8">
               <div className="relative group cursor-pointer">
-                <img
-                  src="https://images.unsplash.com/photo-1559385301-0187cb6eff46?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaWZlc3R5bGV8ZW58MHx8fHwxNzYyNjY3MDYyfDA&ixlib=rb-4.1.0&q=85"
-                  alt="Selling Sunset"
-                  className="w-full aspect-[3/4] object-cover"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
-                  <Play className="w-16 h-16 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black">
-                  <p className="text-white text-sm font-semibold">Selling Sunset</p>
-                  <p className="text-gray-400 text-xs">Season 9</p>
+                <div className="aspect-[2/3] bg-gradient-to-br from-blue-400 via-teal-300 to-orange-200 rounded-lg overflow-hidden">
+                  <div className="absolute inset-0 flex flex-col items-center justify-end p-8 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                    <h4 className="text-white text-3xl font-bold mb-2 tracking-wider">SELLING</h4>
+                    <h4 className="text-yellow-400 text-3xl font-bold mb-6 tracking-wider">SUNSET</h4>
+                    <div className="w-full bg-red-600 hover:bg-red-700 transition-colors py-4 px-6 flex items-center justify-center gap-3 rounded">
+                      <Play className="w-5 h-5 text-white fill-white" />
+                      <span className="text-white text-sm tracking-[0.2em] font-light">PLAY THE TRAILER</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="relative group cursor-pointer">
-                <img
-                  src="https://images.unsplash.com/photo-1559385301-0187cb6eff46?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaWZlc3R5bGV8ZW58MHx8fHwxNzYyNjY3MDYyfDA&ixlib=rb-4.1.0&q=85"
-                  alt="Selling the OC"
-                  className="w-full aspect-[3/4] object-cover"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
-                  <Play className="w-16 h-16 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black">
-                  <p className="text-white text-sm font-semibold">Selling the OC</p>
-                  <p className="text-gray-400 text-xs">Season 3</p>
+                <div className="aspect-[2/3] bg-gradient-to-br from-pink-300 via-purple-200 to-blue-300 rounded-lg overflow-hidden">
+                  <div className="absolute inset-0 flex flex-col items-center justify-end p-8 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                    <h4 className="text-white text-3xl font-bold mb-2 tracking-wider">SELLING</h4>
+                    <h4 className="text-yellow-400 text-2xl font-bold mb-6 tracking-wider">THE OC</h4>
+                    <div className="w-full bg-red-600 hover:bg-red-700 transition-colors py-4 px-6 flex items-center justify-center gap-3 rounded">
+                      <Play className="w-5 h-5 text-white fill-white" />
+                      <span className="text-white text-sm tracking-[0.2em] font-light">PLAY THE TRAILER</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -224,27 +210,27 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Founder - with Parallax Effect */}
-      <section className="py-24 px-6 lg:px-12 relative overflow-hidden">
+      {/* About Founder - with Parallax Background */}
+      <section className="py-24 px-6 lg:px-12 relative" style={{ backgroundColor: '#f5f5f5' }}>
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="parallax-image" data-speed="0.5">
+            <div className="parallax-image" data-speed="0.3">
               <img
                 src="https://images.unsplash.com/photo-1762341116674-784c5dbedeb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBlcnNvbnxlbnwwfHx8fDE3NjI3NjQxODB8MA&ixlib=rb-4.1.0&q=85"
                 alt="CEO & Founder"
                 className="w-full aspect-[3/4] object-cover"
               />
             </div>
-            <div>
+            <div className="bg-white p-12">
               <div className="w-16 h-16 rounded-full border-2 border-red-600 flex items-center justify-center mb-8">
                 <span className="text-red-600 font-bold text-2xl">V</span>
               </div>
-              <p className="text-gray-400 text-xs tracking-[0.3em] mb-3">PRESIDENT & FOUNDER</p>
-              <h2 className="text-white text-6xl font-light mb-8">
+              <p className="text-gray-500 text-xs tracking-[0.3em] mb-3">PRESIDENT & FOUNDER</p>
+              <h2 className="text-black text-6xl font-light mb-8">
                 Michael<br />
                 <span className="font-bold">Vaultier</span>
               </h2>
-              <div className="space-y-4 text-gray-300 text-sm leading-relaxed mb-8">
+              <div className="space-y-4 text-gray-700 text-sm leading-relaxed mb-8">
                 <p>
                   As President and Founder of The Vaultelle, Michael leads a team responsible for
                   representing buyers and sellers of distinguished properties throughout Southern California.
@@ -270,7 +256,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 px-6 lg:px-12 bg-gradient-to-b from-black to-gray-900">
+      <section className="py-24 px-6 lg:px-12 bg-black">
         <div className="max-w-[1920px] mx-auto">
           <h2 className="text-white text-5xl font-light text-center mb-16">
             Why Work<br />
@@ -307,7 +293,7 @@ const Home = () => {
       </section>
 
       {/* About The Vaultelle */}
-      <section className="py-24 px-6 lg:px-12">
+      <section className="py-24 px-6 lg:px-12 bg-black">
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -339,51 +325,113 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-6 lg:px-12 bg-gradient-to-b from-gray-900 to-black">
+      {/* CTA Section - Updated with 3D product style */}
+      <section className="py-24 px-6 lg:px-12 relative overflow-hidden" style={{ backgroundColor: '#c41e3a' }}>
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            <Link to="/sellers" className="group relative aspect-square overflow-hidden">
-              <div className="absolute inset-0 bg-red-600 group-hover:bg-red-700 transition-colors" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                <p className="text-white text-2xl font-light">List</p>
-                <p className="text-white text-sm mt-2">with Us</p>
+            <Link to="/sellers" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+              <div className="text-center">
+                <p className="text-white text-3xl font-light">LIST</p>
+                <p className="text-white text-lg mt-2">WITH US</p>
               </div>
             </Link>
-            <Link to="/buyers" className="group relative aspect-square overflow-hidden">
-              <div className="absolute inset-0 bg-red-600 group-hover:bg-red-700 transition-colors" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                <p className="text-white text-2xl font-light">Buy</p>
-                <p className="text-white text-sm mt-2">with Us</p>
+            <Link to="/buyers" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+              <div className="text-center">
+                <p className="text-white text-3xl font-light">BUY</p>
+                <p className="text-white text-lg mt-2">WITH US</p>
               </div>
             </Link>
-            <Link to="/offices" className="group relative aspect-square overflow-hidden">
-              <div className="absolute inset-0 bg-red-600 group-hover:bg-red-700 transition-colors" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                <p className="text-white text-2xl font-light">Our</p>
-                <p className="text-white text-sm mt-2">Offices</p>
+            <Link to="/offices" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+              <div className="text-center">
+                <p className="text-white text-3xl font-light">OUR</p>
+                <p className="text-white text-lg mt-2">OFFICES</p>
               </div>
             </Link>
-            <Link to="/neighborhood-guides" className="group relative aspect-square overflow-hidden">
-              <div className="absolute inset-0 bg-red-600 group-hover:bg-red-700 transition-colors" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                <p className="text-white text-2xl font-light">Neighborhood</p>
-                <p className="text-white text-sm mt-2">Guides</p>
+            <Link to="/neighborhood-guides" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+              <div className="text-center">
+                <p className="text-white text-3xl font-light">NEIGHBORHOOD</p>
+                <p className="text-white text-lg mt-2">GUIDES</p>
               </div>
             </Link>
-            <Link to="/home-valuation" className="group relative aspect-square overflow-hidden">
-              <div className="absolute inset-0 bg-red-600 group-hover:bg-red-700 transition-colors" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                <p className="text-white text-2xl font-light">Home</p>
-                <p className="text-white text-sm mt-2">Valuation</p>
+            <Link to="/home-valuation" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+              <div className="text-center">
+                <p className="text-white text-3xl font-light">HOME</p>
+                <p className="text-white text-lg mt-2">VALUATION</p>
               </div>
             </Link>
           </div>
         </div>
       </section>
 
+      {/* Concierge Section - Updated with before/after slider */}
+      <section className="py-24 px-6 lg:px-12 bg-black">
+        <div className="max-w-[1920px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-white text-5xl font-light mb-4">
+              White-Glove<br />
+              <span className="font-bold">Concierge</span>
+            </h2>
+            <p className="text-red-600 text-sm tracking-[0.3em]">TOP-TIER SERVICES</p>
+          </div>
+
+          {/* Before/After Slider */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
+                alt="Before"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div 
+                className="absolute inset-0 overflow-hidden"
+                style={{ clipPath: `inset(0 ${100 - conciergeSlider}% 0 0)` }}
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
+                  alt="After"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value={conciergeSlider}
+                onChange={(e) => setConciergeSlider(e.target.value)}
+                className="absolute top-1/2 left-0 right-0 -translate-y-1/2 w-full cursor-pointer opacity-0 z-10"
+              />
+              <div 
+                className="absolute top-0 bottom-0 w-1 bg-white z-20 pointer-events-none"
+                style={{ left: `${conciergeSlider}%` }}
+              >
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
+                  <ChevronLeft className="w-4 h-4 text-black" />
+                  <ChevronRight className="w-4 h-4 text-black" />
+                </div>
+              </div>
+              <div className="absolute top-4 left-4 bg-black/50 text-white px-4 py-2 rounded text-sm">BEFORE</div>
+              <div className="absolute top-4 right-4 bg-black/50 text-white px-4 py-2 rounded text-sm">AFTER</div>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gray-300 text-sm leading-relaxed mb-8">
+              The Vaultelle's Concierge Program aims to prepare your home for an optimal launch on the market. 
+              After assessing your property's needs via a walkthrough, we work together, creating opportunities 
+              to maximize your profit upon sale.
+            </p>
+            <Link
+              to="/concierge"
+              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
+            >
+              LEARN MORE
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
-      <section className="py-24 px-6 lg:px-12">
+      <section className="py-24 px-6 lg:px-12 bg-black">
         <div className="max-w-[1920px] mx-auto">
           <h2 className="text-white text-5xl font-light text-center mb-4">
             What Clients <span className="italic">Are</span> Saying
@@ -393,7 +441,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="bg-gray-900 p-8">
+                <div key={testimonial.id} className="bg-gray-900 p-8 rounded-lg">
                   <img
                     src={testimonial.image}
                     alt={testimonial.author}
@@ -419,23 +467,23 @@ const Home = () => {
         </div>
       </section>
 
-      {/* In The Media */}
-      <section className="py-24 px-6 lg:px-12 bg-gradient-to-b from-black to-gray-900">
+      {/* In The Media - Updated with white cards */}
+      <section className="py-24 px-6 lg:px-12" style={{ backgroundColor: '#f5f5f5' }}>
         <div className="max-w-[1920px] mx-auto">
           <div className="text-center mb-16">
-            <p className="text-gray-400 text-xs tracking-[0.3em] mb-3">HOT OFF THE PRESS</p>
-            <h2 className="text-white text-6xl">
+            <p className="text-gray-500 text-xs tracking-[0.3em] mb-3">HOT OFF THE PRESS</p>
+            <h2 className="text-black text-6xl">
               <span className="font-light italic">In The</span>{' '}
               <span className="font-bold">Media</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {mediaArticles.map((article) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            {mediaArticles.slice(0, 4).map((article) => (
               <a
                 key={article.id}
                 href={article.link}
-                className="group block bg-black overflow-hidden"
+                className="group block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
@@ -445,8 +493,8 @@ const Home = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <p className="text-gray-400 text-xs mb-2">{article.source}</p>
-                  <p className="text-white text-sm leading-relaxed group-hover:text-red-600 transition-colors">
+                  <p className="text-gray-400 text-xs mb-3 tracking-wider">{article.source.toUpperCase()}</p>
+                  <p className="text-black text-sm leading-relaxed group-hover:text-red-600 transition-colors">
                     {article.title}
                   </p>
                 </div>
@@ -466,7 +514,7 @@ const Home = () => {
       </section>
 
       {/* Newsletter */}
-      <section className="py-24 px-6 lg:px-12">
+      <section className="py-24 px-6 lg:px-12 bg-black">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-white text-4xl font-light mb-8">
             Be A Part of the<br />
