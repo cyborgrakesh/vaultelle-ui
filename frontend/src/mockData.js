@@ -72,6 +72,18 @@ export const properties = [
     baths: 12,
     sqft: '10,815',
     image: 'https://images.pexels.com/photos/7031407/pexels-photo-7031407.jpeg'
+  },
+  {
+    id: 7,
+    price: '$14,800,000',
+    address: '18 Dovetail Lane',
+    city: 'Bradbury',
+    state: 'CA',
+    zip: '91008',
+    beds: 10,
+    baths: 13,
+    sqft: '17,153',
+    image: 'https://images.pexels.com/photos/34641806/pexels-photo-34641806.jpeg'
   }
 ];
 
