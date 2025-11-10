@@ -34,21 +34,20 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-gray-300 text-sm leading-relaxed">
                 <p>
-                  The Oppenheim Group is a leading luxury real estate brokerage serving Los Angeles, Orange County, 
-                  San Diego, and Cabo San Lucas. Led by President and Founder Jason Oppenheim, the firm has achieved 
+                  The Vaultelle is a leading luxury real estate brokerage serving Los Angeles, Orange County, 
+                  San Diego, and Cabo San Lucas. Led by President and Founder Michael Vaultier, the firm has achieved 
                   $4.5 billion in total sales and $500 million in active listings, closing hundreds of deals annually, 
                   including numerous record-breaking transactions.
                 </p>
                 <p>
-                  With offices in West Hollywood, Newport Beach, San Diego, and Cabo San Lucas, The Oppenheim Group 
+                  With offices in West Hollywood, Newport Beach, San Diego, and Cabo San Lucas, The Vaultelle 
                   dominates the Southern California luxury market. Our team of elite agents brings unparalleled 
                   expertise, innovative marketing strategies, and a commitment to excellence that sets us apart 
                   in the industry.
                 </p>
                 <p>
-                  Featured on Netflix's Emmy-nominated series "Selling Sunset" and "Selling the OC," The Oppenheim 
-                  Group has gained international recognition while maintaining our focus on delivering exceptional 
-                  results for our clients.
+                  The Vaultelle has gained international recognition while maintaining our focus on delivering exceptional 
+                  results for our clients through cutting-edge technology and personalized service.
                 </p>
               </div>
             </div>
