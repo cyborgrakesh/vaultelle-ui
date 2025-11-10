@@ -36,12 +36,60 @@ const Properties = () => {
           </div>
         </div>
 
-        {/* Properties Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProperties.map((property) => (
-            <PropertyCard key={property.id} property={property} />
-          ))}
-        </div>
+        {/* Properties Grid - 2-3-2 Pattern */}
+        {filteredProperties.length > 0 && (
+          <>
+            {/* First Row - 2 Cards */}
+            {filteredProperties.length >= 2 && (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                {filteredProperties.slice(0, 2).map((property) => (
+                  <PropertyCard key={property.id} property={property} />
+                ))}
+              </div>
+            )}
+            
+            {/* Second Row - 3 Cards */}
+            {filteredProperties.length >= 5 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                {filteredProperties.slice(2, 5).map((property) => (
+                  <PropertyCard key={property.id} property={property} />
+                ))}
+              </div>
+            )}
+            
+            {/* Remaining Cards - Continue Pattern */}
+            {filteredProperties.length > 5 && (
+              <div className="space-y-6">
+                {Array.from({ length: Math.ceil((filteredProperties.length - 5) / 5) }).map((_, groupIndex) => {
+                  const startIndex = 5 + groupIndex * 5;
+                  const endIndex = Math.min(startIndex + 5, filteredProperties.length);
+                  const groupProperties = filteredProperties.slice(startIndex, endIndex);
+                  
+                  return (
+                    <div key={groupIndex}>
+                      {/* 2 Cards Row */}
+                      {groupProperties.length >= 2 && (
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                          {groupProperties.slice(0, 2).map((property) => (
+                            <PropertyCard key={property.id} property={property} />
+                          ))}
+                        </div>
+                      )}
+                      {/* 3 Cards Row */}
+                      {groupProperties.length > 2 && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                          {groupProperties.slice(2, 5).map((property) => (
+                            <PropertyCard key={property.id} property={property} />
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </>
+        )}
 
         {filteredProperties.length === 0 && (
           <div className="text-center py-24">
