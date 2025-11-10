@@ -534,38 +534,62 @@ const Home = () => {
       </section>
 
       {/* Let's Get Social Section */}
-      <section className="py-24 px-6 lg:px-12" style={{ backgroundColor: '#f5f5f5' }}>
-        <div className="max-w-[1920px] mx-auto">
-          <h2 className="text-center mb-16">
-            <span className="text-black font-light text-6xl">LET'S GET </span>
-            <span className="text-red-800 font-bold text-6xl">SOCIAL</span>
+      <section 
+        className="py-32 px-6 lg:px-12 relative" 
+        style={{ 
+          backgroundColor: '#e8e8e8',
+          backgroundImage: 'linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1))'
+        }}
+      >
+        {/* Subtle cloud background */}
+        <div className="absolute inset-0 opacity-10" style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=1920&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}></div>
+
+        <div className="max-w-[1600px] mx-auto relative z-10">
+          <h2 className="text-center mb-20" style={{ lineHeight: '1' }}>
+            <span className="font-light" style={{ 
+              fontSize: '7rem',
+              color: 'transparent',
+              WebkitTextStroke: '2px #b91c1c',
+              letterSpacing: '0.05em'
+            }}>LET'S GET </span>
+            <span className="font-bold text-red-700" style={{ 
+              fontSize: '7rem',
+              letterSpacing: '0.05em'
+            }}>SOCIAL</span>
           </h2>
 
           {/* Bar Chart */}
-          <div className="flex items-end justify-center gap-4 mb-12 h-[400px]">
+          <div className="flex items-end justify-center gap-3 mb-16 h-[450px] px-4">
             {socialData.map((company, index) => {
               const height = (company.followers / maxFollowers) * 100;
+              const isVaultelle = index === 0;
               return (
-                <div key={index} className="flex flex-col items-center gap-2" style={{ width: '70px' }}>
-                  <div className="text-gray-700 text-xs font-semibold mb-2">{company.followers}K+</div>
+                <div key={index} className="flex flex-col items-center gap-2" style={{ width: '65px' }}>
+                  <div className="text-gray-800 text-[11px] font-bold mb-2">{company.followers}K+</div>
                   <div 
-                    className="w-full transition-all duration-1000 ease-out relative group"
+                    className="w-full relative group shadow-lg transition-all duration-700 ease-out hover:scale-105"
                     style={{ 
                       height: `${height}%`,
-                      backgroundColor: company.color,
-                      minHeight: '40px'
+                      backgroundColor: isVaultelle ? '#b91c1c' : '#e0e0e0',
+                      minHeight: '50px',
+                      borderRadius: '2px'
                     }}
                   >
-                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
                   </div>
                   <div 
-                    className="text-xs text-gray-700 font-semibold text-center leading-tight" 
+                    className="text-[10px] text-gray-800 font-semibold text-center mt-2" 
                     style={{ 
                       writingMode: 'vertical-rl',
                       transform: 'rotate(180deg)',
-                      height: '100px',
+                      height: '110px',
                       display: 'flex',
-                      alignItems: 'center'
+                      alignItems: 'center',
+                      letterSpacing: '0.05em'
                     }}
                   >
                     {company.name}
@@ -575,8 +599,8 @@ const Home = () => {
             })}
           </div>
 
-          <p className="text-center text-gray-700 text-sm max-w-3xl mx-auto">
-            THE VAULTELLE HAS <span className="font-bold">MORE FOLLOWERS ON INSTAGRAM THAN ANY OTHER REAL ESTATE BROKERAGE</span> IN THE WORLD.
+          <p className="text-center text-gray-800 text-xs max-w-4xl mx-auto font-semibold tracking-wider leading-relaxed">
+            THE VAULTELLE HAS <span className="font-bold text-red-700">MORE FOLLOWERS ON INSTAGRAM THAN ANY OTHER REAL ESTATE BROKERAGE</span> IN THE WORLD.
           </p>
         </div>
       </section>
