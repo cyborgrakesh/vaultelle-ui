@@ -483,50 +483,50 @@ const Home = () => {
       </section>
 
       {/* Download Our App Section */}
-      <section className="py-24 px-6 lg:px-12 bg-white">
-        <div className="max-w-[1920px] mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-32 px-6 lg:px-12" style={{ backgroundColor: '#f5f5f5' }}>
+        <div className="max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
-              <p className="text-gray-500 text-xs tracking-[0.3em] mb-4">AHEAD OF THE MARKET</p>
-              <h2 className="text-red-800 font-light mb-8" style={{ fontSize: '5rem', lineHeight: '0.9' }}>
-                DOWNLOAD<br />
-                <span className="font-bold">OUR APP</span>
+              <p className="text-gray-500 text-[10px] tracking-[0.3em] mb-6 font-light">AHEAD OF THE MARKET</p>
+              <h2 className="mb-12" style={{ lineHeight: '0.85' }}>
+                <span className="text-red-700 font-light block" style={{ fontSize: '5.5rem', letterSpacing: '0.02em' }}>DOWNLOAD</span>
+                <span className="text-red-700 font-bold block" style={{ fontSize: '5.5rem', letterSpacing: '0.02em' }}>OUR APP</span>
               </h2>
-              <p className="text-gray-700 text-sm leading-relaxed mb-8">
-                The Vaultelle mobile app provides the most thorough home search functionality and the
-                latest inventory directly from the MLS. Constant updates will always keep you ahead of the
-                market as you locate new homes for sale, upcoming open houses, and recently sold properties.
-              </p>
-              <div className="flex gap-4">
-                <a 
-                  href="#" 
-                  className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors"
-                >
-                  <Apple className="w-6 h-6" />
-                  <div className="text-left">
-                    <p className="text-xs">Download on the</p>
-                    <p className="text-sm font-semibold">App Store</p>
-                  </div>
-                </a>
-                <a 
-                  href="#" 
-                  className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-gray-800 transition-colors"
-                >
-                  <Smartphone className="w-6 h-6" />
-                  <div className="text-left">
-                    <p className="text-xs">GET IT ON</p>
-                    <p className="text-sm font-semibold">Google Play</p>
-                  </div>
-                </a>
+              <div className="mb-12">
+                <p className="text-gray-800 text-xs font-semibold mb-3 tracking-wider">STAY AHEAD OF THE MARKET 24/7</p>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  The Vaultelle mobile app provides the most thorough home search functionality and the
+                  latest inventory directly from the MLS. Constant updates will always keep you ahead of the
+                  market as you locate new homes for sale, upcoming open houses, and recently sold properties.
+                </p>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
-                  alt="App Screenshot"
-                  className="w-[280px] rounded-3xl shadow-2xl"
-                />
+                <div className="w-[300px] aspect-[9/19] bg-black rounded-[3rem] p-3 shadow-2xl">
+                  <div className="w-full h-full bg-gray-900 rounded-[2.5rem] overflow-hidden relative">
+                    {/* Notch */}
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10"></div>
+                    {/* Screen Content */}
+                    <img 
+                      src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
+                      alt="App Interface"
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Overlay showing app UI elements */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div className="absolute top-12 left-4 right-4 z-20">
+                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 mb-2">
+                        <input 
+                          type=\"text\" 
+                          placeholder=\"Search city, zip, address...\" 
+                          className=\"w-full bg-white/20 text-white text-xs px-3 py-2 rounded-lg placeholder-white/70\"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
