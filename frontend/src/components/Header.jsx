@@ -46,9 +46,8 @@ const Header = () => {
       name: 'ABOUT US',
       href: '/about',
       submenu: [
-        { name: 'The Oppenheim Group', href: '/about' },
+        { name: 'The Vaultelle', href: '/about' },
         { name: 'Our Agents', href: '/agents' },
-        { name: 'Jason Oppenheim', href: '/jason-oppenheim' },
         { name: 'Client Reviews', href: '/reviews' },
         { name: 'Philanthropy', href: '/philanthropy' }
       ]
@@ -64,9 +63,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-10 h-10 rounded-full border-2 border-red-600 flex items-center justify-center transition-transform group-hover:scale-110">
-              <span className="text-red-600 font-bold text-xl">O</span>
+              <span className="text-red-600 font-bold text-xl">V</span>
             </div>
-            <span className="text-white text-sm tracking-[0.2em] hidden md:block">THE OPPENHEIM GROUP</span>
+            <span className="text-white text-[11px] tracking-[0.25em] font-light hidden md:block">THE VAULTELLE</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -80,18 +79,18 @@ const Header = () => {
               >
                 <Link
                   to={item.href}
-                  className="text-white text-xs tracking-wider hover:text-red-600 transition-colors flex items-center gap-1"
+                  className="text-white text-[11px] tracking-[0.15em] font-light hover:text-red-600 transition-colors flex items-center gap-1"
                 >
                   {item.name}
                   {item.submenu && <ChevronDown className="w-3 h-3" />}
                 </Link>
                 {item.submenu && activeDropdown === item.name && (
-                  <div className="absolute top-full left-0 mt-2 bg-black border border-gray-800 min-w-[200px] py-2">
+                  <div className="absolute top-full left-0 mt-2 bg-black border border-gray-800 min-w-[200px] py-2 shadow-xl">
                     {item.submenu.map((subItem) => (
                       <Link
                         key={subItem.name}
                         to={subItem.href}
-                        className="block px-4 py-2 text-white text-xs hover:bg-red-600 transition-colors"
+                        className="block px-4 py-2 text-white text-[11px] tracking-[0.1em] font-light hover:bg-red-600 transition-colors"
                       >
                         {subItem.name}
                       </Link>
