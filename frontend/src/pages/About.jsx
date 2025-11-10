@@ -15,10 +15,10 @@ const About = () => {
         <div className="absolute inset-0 bg-black bg-opacity-60" />
         <div className="relative z-10 text-center">
           <div className="w-24 h-24 rounded-full border-2 border-red-600 flex items-center justify-center mx-auto mb-8">
-            <span className="text-red-600 font-bold text-4xl">O</span>
+            <span className="text-red-600 font-bold text-4xl">V</span>
           </div>
           <h1 className="text-white text-7xl font-light mb-4">
-            The <span className="font-bold">Oppenheim Group</span>
+            The <span className="font-bold">Vaultelle</span>
           </h1>
           <p className="text-gray-300 text-xl">Leading Luxury Real Estate in Southern California</p>
         </div>
