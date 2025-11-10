@@ -87,22 +87,37 @@ const Home = () => {
         <div className="max-w-[1920px] mx-auto">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <p className="text-gray-400 text-xs tracking-[0.3em] mb-3">EXCLUSIVE PROPERTIES</p>
-              <h2 className="text-white text-6xl">
-                <span className="font-light">FEATURED </span>
+              <p className="text-gray-400 text-[10px] tracking-[0.4em] mb-4 font-light">EXCLUSIVE PROPERTIES</p>
+              <h2 className="text-white text-7xl">
+                <span className="font-extralight tracking-wide">FEATURED </span>
                 <span className="font-bold">LISTINGS</span>
               </h2>
             </div>
             <Link
               to="/properties"
-              className="bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors flex items-center gap-2"
+              className="bg-red-600 text-white px-8 py-3 text-[11px] tracking-[0.2em] hover:bg-red-700 transition-colors flex items-center gap-2 font-light"
             >
               VIEW ALL <Plus className="w-4 h-4" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {properties.slice(0, 6).map((property) => (
+          {/* First Row - 2 Large Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            {properties.slice(0, 2).map((property) => (
+              <PropertyCard key={property.id} property={property} />
+            ))}
+          </div>
+
+          {/* Second Row - 3 Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            {properties.slice(2, 5).map((property) => (
+              <PropertyCard key={property.id} property={property} />
+            ))}
+          </div>
+
+          {/* Third Row - 2 Large Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {properties.slice(5, 7).map((property) => (
               <PropertyCard key={property.id} property={property} />
             ))}
           </div>
