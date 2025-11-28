@@ -70,8 +70,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-full border-2 border-red-600 flex items-center justify-center transition-transform group-hover:scale-110">
-              <span className="text-red-600 font-bold text-xl">V</span>
+            <div className="w-10 h-10 rounded-full border-2 border-regal-bronze flex items-center justify-center transition-transform group-hover:scale-110">
+              <span className="text-regal-bronze font-bold text-xl">V</span>
             </div>
             <span className="text-white text-[10px] tracking-[0.25em] font-light hidden md:block" style={{ letterSpacing: '0.25em' }}>THE VAULTELLE</span>
           </Link>
@@ -87,7 +87,7 @@ const Header = () => {
               >
                 <Link
                   to={item.href}
-                  className="text-white text-[11px] tracking-[0.2em] font-normal hover:text-red-600 transition-colors flex items-center gap-1"
+                  className="text-white text-[11px] tracking-[0.2em] font-normal hover:text-regal-bronze transition-colors flex items-center gap-1"
                   style={{ fontWeight: '400', letterSpacing: '0.2em' }}
                 >
                   {item.name}
@@ -99,7 +99,7 @@ const Header = () => {
                         <Link
                           key={subItem.name}
                           to={subItem.href}
-                          className="block px-6 py-3 text-white text-[11px] tracking-[0.15em] font-light hover:bg-red-600 hover:text-white transition-colors"
+                          className="block px-6 py-3 text-white text-[11px] tracking-[0.15em] font-light hover:bg-regal-bronze hover:text-white transition-colors"
                         >
                           {subItem.name}
                         </Link>
@@ -129,7 +129,7 @@ const Header = () => {
               <div key={item.name}>
                 <Link
                   to={item.href}
-                  className="block text-white text-sm tracking-wider hover:text-red-600 transition-colors py-2"
+                  className="block text-white text-sm tracking-wider hover:text-regal-bronze transition-colors py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -140,7 +140,7 @@ const Header = () => {
                       <Link
                         key={subItem.name}
                         to={subItem.href}
-                        className="block text-gray-400 text-xs hover:text-red-600 transition-colors py-1"
+                        className="block text-gray-400 text-xs hover:text-regal-bronze transition-colors py-1"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {subItem.name}
