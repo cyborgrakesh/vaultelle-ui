@@ -437,7 +437,7 @@ const Home = () => {
       </section>
 
       {/* In The Media */}
-      <section className="py-24 px-6 lg:px-12" style={{ backgroundColor: '#f5f5f5' }}>
+      <section className="py-24 px-6 lg:px-12" style={{ backgroundColor: '#C0C1C3' }}>
         <div className="max-w-[1920px] mx-auto">
           <div className="text-center mb-16">
             <p className="text-gray-500 text-xs tracking-[0.3em] mb-3">HOT OFF THE PRESS</p>
@@ -483,7 +483,7 @@ const Home = () => {
       </section>
 
       {/* Download Our App Section */}
-      <section className="py-32 px-6 lg:px-12" style={{ backgroundColor: '#f5f5f5' }}>
+      <section className="py-32 px-6 lg:px-12" style={{ backgroundColor: '#C0C1C3' }}>
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
@@ -582,7 +582,7 @@ const Home = () => {
       <section 
         className="py-32 px-6 lg:px-12 relative" 
         style={{ 
-          backgroundColor: '#e8e8e8',
+          backgroundColor: '#C0C1C3',
           backgroundImage: 'linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1))'
         }}
       >
