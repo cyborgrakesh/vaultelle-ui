@@ -41,7 +41,7 @@ const Home = () => {
   };
 
   const socialData = [
-    { name: 'The Vaultelle', followers: 606, color: '#c41e3a' },
+    { name: 'The Vaultelle', followers: 606, color: '#A08C67' },
     { name: 'Serhant', followers: 547, color: '#888' },
     { name: 'The Agency', followers: 507, color: '#888' },
     { name: "Sotheby's", followers: 495, color: '#888' },
@@ -296,7 +296,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-6 lg:px-12 relative overflow-hidden" style={{ backgroundColor: '#c41e3a' }}>
+      <section className="py-24 px-6 lg:px-12 relative overflow-hidden" style={{ backgroundColor: '#A08C67' }}>
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <Link to="/sellers" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
@@ -598,7 +598,7 @@ const Home = () => {
             <span className="font-light" style={{ 
               fontSize: '7rem',
               color: 'transparent',
-              WebkitTextStroke: '2px #b91c1c',
+              WebkitTextStroke: '2px #A08C67',
               letterSpacing: '0.05em'
             }}>LET'S GET </span>
             <span className="font-bold text-red-700" style={{ 
@@ -619,7 +619,7 @@ const Home = () => {
                     className="w-full relative group shadow-lg transition-all duration-700 ease-out hover:scale-105"
                     style={{ 
                       height: `${height}%`,
-                      backgroundColor: isVaultelle ? '#b91c1c' : '#e0e0e0',
+                      backgroundColor: isVaultelle ? '#A08C67' : '#e0e0e0',
                       minHeight: '50px',
                       borderRadius: '2px'
                     }}
