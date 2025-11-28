@@ -87,7 +87,7 @@ const Philanthropy = () => {
               Organizations We <span className="font-bold">Support</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gray-900 p-8">
+              <div className="bg-velvet-night p-8">
                 <h3 className="text-white text-2xl font-semibold mb-4">FoodOnFoot.org</h3>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
                   A Los Angeles-based nonprofit dedicated to helping unhoused and low-income individuals 
@@ -102,7 +102,7 @@ const Philanthropy = () => {
                   LEARN MORE
                 </a>
               </div>
-              <div className="bg-gray-900 p-8">
+              <div className="bg-velvet-night p-8">
                 <h3 className="text-white text-2xl font-semibold mb-4">LA Fire & Police</h3>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
                   Supporting our local first responders who risk their lives to protect our community, 

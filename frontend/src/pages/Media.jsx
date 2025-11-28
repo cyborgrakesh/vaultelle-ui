@@ -40,7 +40,7 @@ const Media = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6 bg-gray-900 group-hover:bg-gray-800 transition-colors">
+              <div className="p-6 bg-velvet-night group-hover:bg-gray-800 transition-colors">
                 <p className="text-gray-400 text-xs mb-3 tracking-wider">{article.source.toUpperCase()}</p>
                 <h3 className="text-white text-base leading-relaxed group-hover:text-regal-bronze transition-colors">
                   {article.title}

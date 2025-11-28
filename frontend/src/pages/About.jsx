@@ -66,21 +66,21 @@ const About = () => {
               Our <span className="font-bold">Values</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gray-900 p-8 text-center">
+              <div className="bg-velvet-night p-8 text-center">
                 <h3 className="text-white text-2xl font-semibold mb-4">Excellence</h3>
                 <p className="text-gray-400 text-sm">
                   We strive for excellence in every transaction, ensuring our clients receive the highest level 
                   of service and the best possible results.
                 </p>
               </div>
-              <div className="bg-gray-900 p-8 text-center">
+              <div className="bg-velvet-night p-8 text-center">
                 <h3 className="text-white text-2xl font-semibold mb-4">Integrity</h3>
                 <p className="text-gray-400 text-sm">
                   Honesty, transparency, and ethical practices are the foundation of our business and our 
                   relationships with clients.
                 </p>
               </div>
-              <div className="bg-gray-900 p-8 text-center">
+              <div className="bg-velvet-night p-8 text-center">
                 <h3 className="text-white text-2xl font-semibold mb-4">Innovation</h3>
                 <p className="text-gray-400 text-sm">
                   We embrace cutting-edge technology and marketing strategies to stay ahead of the market 

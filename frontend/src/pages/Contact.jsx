@@ -59,7 +59,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Full Name"
                   required
-                  className="w-full bg-gray-900 text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full bg-velvet-night text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
                 />
               </div>
               <div>
@@ -70,7 +70,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Email Address"
                   required
-                  className="w-full bg-gray-900 text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full bg-velvet-night text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
                 />
               </div>
               <div>
@@ -81,7 +81,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Phone Number"
                   required
-                  className="w-full bg-gray-900 text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full bg-velvet-night text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
                 />
               </div>
               <div>
@@ -89,7 +89,7 @@ const Contact = () => {
                   name="interest"
                   value={formData.interest}
                   onChange={handleChange}
-                  className="w-full bg-gray-900 text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full bg-velvet-night text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
                 >
                   <option value="buying">I'm interested in buying</option>
                   <option value="selling">I'm interested in selling</option>
@@ -105,7 +105,7 @@ const Contact = () => {
                   placeholder="Your Message"
                   rows="6"
                   required
-                  className="w-full bg-gray-900 text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600 resize-none"
+                  className="w-full bg-velvet-night text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600 resize-none"
                 />
               </div>
               <button

@@ -54,22 +54,22 @@ const Buyers = () => {
 
           {/* Features */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
-            <div className="text-center p-8 bg-gray-900">
+            <div className="text-center p-8 bg-velvet-night">
               <Search className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Personalized Search</h3>
               <p className="text-gray-400 text-sm">Tailored property searches based on your specific needs and preferences</p>
             </div>
-            <div className="text-center p-8 bg-gray-900">
+            <div className="text-center p-8 bg-velvet-night">
               <Home className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Exclusive Access</h3>
               <p className="text-gray-400 text-sm">First look at off-market properties and new listings before they hit the market</p>
             </div>
-            <div className="text-center p-8 bg-gray-900">
+            <div className="text-center p-8 bg-velvet-night">
               <TrendingUp className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Market Expertise</h3>
               <p className="text-gray-400 text-sm">Deep knowledge of local market trends and property values</p>
             </div>
-            <div className="text-center p-8 bg-gray-900">
+            <div className="text-center p-8 bg-velvet-night">
               <Award className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Award-Winning Service</h3>
               <p className="text-gray-400 text-sm">Recognized as top agents in Los Angeles and Southern California</p>

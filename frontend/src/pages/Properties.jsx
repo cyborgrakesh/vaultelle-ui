@@ -31,7 +31,7 @@ const Properties = () => {
               placeholder="Search by address or city..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-gray-900 text-white pl-16 pr-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full bg-velvet-night text-white pl-16 pr-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
             />
           </div>
         </div>

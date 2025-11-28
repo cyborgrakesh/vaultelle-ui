@@ -80,22 +80,22 @@ const Sellers = () => {
 
           {/* Services */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
-            <div className="text-center p-8 bg-gray-900">
+            <div className="text-center p-8 bg-velvet-night">
               <Camera className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Professional Media</h3>
               <p className="text-gray-400 text-sm">High-end photography, videography, and virtual tours</p>
             </div>
-            <div className="text-center p-8 bg-gray-900">
+            <div className="text-center p-8 bg-velvet-night">
               <Users className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Expert Team</h3>
               <p className="text-gray-400 text-sm">Award-winning agents with proven track records</p>
             </div>
-            <div className="text-center p-8 bg-gray-900">
+            <div className="text-center p-8 bg-velvet-night">
               <Globe className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Global Exposure</h3>
               <p className="text-gray-400 text-sm">International marketing through luxury networks</p>
             </div>
-            <div className="text-center p-8 bg-gray-900">
+            <div className="text-center p-8 bg-velvet-night">
               <DollarSign className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Maximum Value</h3>
               <p className="text-gray-400 text-sm">Strategic pricing and negotiation expertise</p>

@@ -410,7 +410,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="bg-gray-900 p-8 rounded-lg">
+                <div key={testimonial.id} className="bg-velvet-night p-8 rounded-lg">
                   <img
                     src={testimonial.image}
                     alt={testimonial.author}
@@ -532,7 +532,7 @@ const Home = () => {
           <div className="flex justify-center mt-16">
             <div className="relative">
               <div className="w-[300px] aspect-[9/19] bg-velvet-night rounded-[3rem] p-3 shadow-2xl">
-                <div className="w-full h-full bg-gray-900 rounded-[2.5rem] overflow-hidden relative">
+                <div className="w-full h-full bg-velvet-night rounded-[2.5rem] overflow-hidden relative">
                   {/* Notch */}
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-velvet-night rounded-b-3xl z-10"></div>
                   {/* Screen Content */}
@@ -665,12 +665,12 @@ const Home = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full bg-gray-900 text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full bg-velvet-night text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full bg-gray-900 text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full bg-velvet-night text-white px-6 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-red-600"
             />
             <button
               type="submit"
