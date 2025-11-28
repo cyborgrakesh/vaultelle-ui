@@ -11,11 +11,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Contact */}
           <div>
-            <Link to="/" className="flex items-center space-x-3 mb-6">
+            <Link to="/" className="flex items-center gap-3 mb-6">
               <img 
                 src="/logo/Vaultelle-Logo.svg" 
                 alt="Vaultelle" 
                 className="w-10 h-10"
+              />
+              <img 
+                src="/logo/Vaultelle-Wordmark.svg" 
+                alt="Vaultelle" 
+                className="h-5 w-auto"
               />
             </Link>
             <p className="text-sm mb-4">
