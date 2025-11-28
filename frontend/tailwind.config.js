@@ -7,6 +7,18 @@ module.exports = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			'sans': ['Inter', 'sans-serif'],
+  			'display': ['Playfair Display', 'serif'],
+  			'body': ['Inter', 'sans-serif'],
+  		},
+  		letterSpacing: {
+  			'vaultelle-tight': '-0.05em',
+  			'vaultelle-normal': '0em',
+  			'vaultelle-wide': '0.04em',
+  			'vaultelle-wider': '0.08em',
+  			'vaultelle-widest': '0.12em',
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
