@@ -58,7 +58,7 @@ const Philanthropy = () => {
           </div>
 
           {/* Impact Stats */}
-          <div className="bg-gradient-to-r from-red-600 to-red-700 p-12 mb-24">
+          <div className="bg-regal-bronze p-12 mb-24">
             <h2 className="text-white text-4xl font-light text-center mb-12">
               Our <span className="font-bold">Impact</span>
             </h2>
