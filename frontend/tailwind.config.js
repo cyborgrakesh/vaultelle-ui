@@ -8,10 +8,11 @@ module.exports = {
   theme: {
   	extend: {
   		fontFamily: {
-  			'sans': ['Inter', 'sans-serif'],
+  			'sans': ['General Sans', 'sans-serif'],
   			'display': ['Erstoria', 'serif'],
-  			'body': ['Inter', 'sans-serif'],
+  			'body': ['General Sans', 'sans-serif'],
   			'erstoria': ['Erstoria', 'serif'],
+  			'general-sans': ['General Sans', 'sans-serif'],
   		},
   		letterSpacing: {
   			'vaultelle-tight': '-0.05em',
