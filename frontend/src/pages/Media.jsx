@@ -4,7 +4,7 @@ import { ExternalLink } from 'lucide-react';
 
 const Media = () => {
   return (
-    <div className="bg-black min-h-screen pt-32 pb-24">
+    <div className="bg-velvet-night min-h-screen pt-32 pb-24">
       <div className="max-w-[1920px] mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-24">
@@ -24,7 +24,7 @@ const Media = () => {
             <a
               key={article.id}
               href={article.link}
-              className="group block bg-black overflow-hidden"
+              className="group block bg-velvet-night overflow-hidden"
             >
               {/* Image */}
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -33,7 +33,7 @@ const Media = () => {
                   alt={article.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-500" />
+                <div className="absolute inset-0 bg-velvet-night bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-500" />
                 <div className="absolute top-4 right-4 bg-regal-bronze w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <ExternalLink className="w-5 h-5 text-white" />
                 </div>

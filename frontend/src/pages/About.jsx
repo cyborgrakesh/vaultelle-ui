@@ -4,7 +4,7 @@ import { agents } from '../mockData';
 
 const About = () => {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-velvet-night min-h-screen">
       {/* Hero */}
       <section className="relative h-[60vh] flex items-center justify-center">
         <img
@@ -12,7 +12,7 @@ const About = () => {
           alt="The Oppenheim Group"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        <div className="absolute inset-0 bg-velvet-night bg-opacity-60" />
         <div className="relative z-10 text-center">
           <div className="w-24 h-24 rounded-full border-2 border-regal-bronze flex items-center justify-center mx-auto mb-8">
             <span className="text-regal-bronze font-bold text-4xl">V</span>

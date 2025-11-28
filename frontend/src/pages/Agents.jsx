@@ -4,7 +4,7 @@ import { Mail, Phone } from 'lucide-react';
 
 const Agents = () => {
   return (
-    <div className="bg-black min-h-screen pt-32 pb-24">
+    <div className="bg-velvet-night min-h-screen pt-32 pb-24">
       <div className="max-w-[1920px] mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-24">
@@ -27,7 +27,7 @@ const Agents = () => {
                   alt={agent.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center">
+                <div className="absolute inset-0 bg-velvet-night bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 space-y-3">
                     <a
                       href="mailto:agent@ogroup.com"

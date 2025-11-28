@@ -65,7 +65,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-velvet-night">
       <div className="max-w-[1920px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -94,7 +94,7 @@ const Header = () => {
                 </Link>
                 {item.submenu && activeDropdown === item.name && (
                   <div className="absolute top-full left-0 pt-4">
-                    <div className="bg-black border border-gray-800 min-w-[220px] py-2 shadow-xl">
+                    <div className="bg-velvet-night border border-gray-800 min-w-[220px] py-2 shadow-xl">
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.name}
@@ -123,7 +123,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-black border-t border-gray-800">
+        <div className="xl:hidden bg-velvet-night border-t border-gray-800">
           <div className="px-6 py-4 space-y-4">
             {navigation.map((item) => (
               <div key={item.name}>

@@ -4,7 +4,7 @@ import { Search, Home, TrendingUp, Award } from 'lucide-react';
 
 const Buyers = () => {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-velvet-night min-h-screen">
       {/* Hero */}
       <section className="relative h-[60vh] flex items-center justify-center">
         <img
@@ -12,7 +12,7 @@ const Buyers = () => {
           alt="Buy With Us"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        <div className="absolute inset-0 bg-velvet-night bg-opacity-60" />
         <div className="relative z-10 text-center">
           <h1 className="text-white text-7xl font-light mb-4">
             Buy <span className="font-bold">With Us</span>

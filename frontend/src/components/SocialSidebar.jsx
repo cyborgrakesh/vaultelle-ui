@@ -13,7 +13,7 @@ const SocialSidebar = () => {
 
   return (
     <div className="fixed left-0 top-1/2 -translate-y-1/2 z-40 hidden lg:block">
-      <div className="bg-black bg-opacity-80 backdrop-blur-sm py-6 px-3">
+      <div className="bg-velvet-night bg-opacity-80 backdrop-blur-sm py-6 px-3">
         <div className="flex flex-col space-y-6">
           {socials.map((social, index) => {
             const Icon = social.icon;

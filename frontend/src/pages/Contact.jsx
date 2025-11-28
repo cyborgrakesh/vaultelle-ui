@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black min-h-screen pt-32 pb-24">
+    <div className="bg-velvet-night min-h-screen pt-32 pb-24">
       <div className="max-w-[1920px] mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-24">

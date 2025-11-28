@@ -60,7 +60,7 @@ const Home = () => {
   const maxFollowers = Math.max(...socialData.map(d => d.followers));
 
   return (
-    <div className="bg-black">
+    <div className="bg-velvet-night">
       {/* Hero Slider */}
       <section className="relative h-screen mt-20">
         {heroSlides.map((slide, index) => (
@@ -225,7 +225,7 @@ const Home = () => {
           backgroundSize: 'cover'
         }}
       >
-        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="absolute inset-0 bg-velvet-night/80"></div>
         
         <div className="max-w-[1920px] mx-auto relative z-10">
           <h2 className="text-white text-5xl font-light text-center mb-16">
@@ -263,7 +263,7 @@ const Home = () => {
       </section>
 
       {/* About The Vaultelle */}
-      <section className="py-24 px-6 lg:px-12 bg-black">
+      <section className="py-24 px-6 lg:px-12 bg-velvet-night">
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -334,7 +334,7 @@ const Home = () => {
       </section>
 
       {/* Concierge Section */}
-      <section className="py-24 px-6 lg:px-12 bg-black">
+      <section className="py-24 px-6 lg:px-12 bg-velvet-night">
         <div className="max-w-[1920px] mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-white text-5xl font-light mb-4">
@@ -378,8 +378,8 @@ const Home = () => {
                   <ChevronRight className="w-4 h-4 text-black" />
                 </div>
               </div>
-              <div className="absolute top-4 left-4 bg-black/50 text-white px-4 py-2 rounded text-sm">BEFORE</div>
-              <div className="absolute top-4 right-4 bg-black/50 text-white px-4 py-2 rounded text-sm">AFTER</div>
+              <div className="absolute top-4 left-4 bg-velvet-night/50 text-white px-4 py-2 rounded text-sm">BEFORE</div>
+              <div className="absolute top-4 right-4 bg-velvet-night/50 text-white px-4 py-2 rounded text-sm">AFTER</div>
             </div>
           </div>
 
@@ -400,7 +400,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 px-6 lg:px-12 bg-black">
+      <section className="py-24 px-6 lg:px-12 bg-velvet-night">
         <div className="max-w-[1920px] mx-auto">
           <h2 className="text-white text-5xl font-light text-center mb-4">
             What Clients <span className="italic">Are</span> Saying
@@ -531,10 +531,10 @@ const Home = () => {
           {/* Phone Mockup - Centered below */}
           <div className="flex justify-center mt-16">
             <div className="relative">
-              <div className="w-[300px] aspect-[9/19] bg-black rounded-[3rem] p-3 shadow-2xl">
+              <div className="w-[300px] aspect-[9/19] bg-velvet-night rounded-[3rem] p-3 shadow-2xl">
                 <div className="w-full h-full bg-gray-900 rounded-[2.5rem] overflow-hidden relative">
                   {/* Notch */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10"></div>
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-velvet-night rounded-b-3xl z-10"></div>
                   {/* Screen Content */}
                   <img 
                     src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
@@ -651,7 +651,7 @@ const Home = () => {
       </section>
 
       {/* Newsletter */}
-      <section className="py-24 px-6 lg:px-12 bg-black">
+      <section className="py-24 px-6 lg:px-12 bg-velvet-night">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-white text-4xl font-light mb-8">
             Be A Part of the<br />
