@@ -51,7 +51,7 @@ const Media = () => {
         </div>
 
         {/* Netflix Section */}
-        <div className="mt-24 bg-gradient-to-r from-red-600 to-red-700 p-12 text-center">
+        <div className="mt-24 bg-regal-bronze p-12 text-center">
           <h2 className="text-white text-5xl font-light mb-6">
             As Seen On <span className="font-bold">Netflix</span>
           </h2>
