@@ -70,9 +70,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-full border-2 border-regal-bronze flex items-center justify-center transition-transform group-hover:scale-110">
-              <span className="text-regal-bronze font-bold text-xl">V</span>
-            </div>
+            <img 
+              src="/logo/Vaultelle-Logo.svg" 
+              alt="Vaultelle" 
+              className="w-10 h-10 transition-transform group-hover:scale-110"
+              style={{ minWidth: '40px', minHeight: '40px' }}
+            />
             <span className="text-white text-[10px] tracking-[0.25em] font-light hidden md:block" style={{ letterSpacing: '0.25em' }}>THE VAULTELLE</span>
           </Link>
 
