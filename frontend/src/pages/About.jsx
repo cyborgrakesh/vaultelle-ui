@@ -14,13 +14,21 @@ const About = () => {
         />
         <div className="absolute inset-0 bg-velvet-night bg-opacity-60" />
         <div className="relative z-10 text-center">
-          <img 
-            src="/logo/Vaultelle-Logo.svg" 
-            alt="Vaultelle" 
-            className="w-24 h-24 mx-auto mb-8"
-          />
-          <h1 className="text-white text-7xl font-light mb-4">
-            The <span className="font-bold">Vaultelle</span>
+          {/* Stacked Lockup: Brandmark centered above wordmark */}
+          <div className="flex flex-col items-center mb-8">
+            <img 
+              src="/logo/Vaultelle-Logo.svg" 
+              alt="Vaultelle" 
+              className="w-24 h-24 mb-6"
+            />
+            <img 
+              src="/logo/Vaultelle-Wordmark.svg" 
+              alt="Vaultelle" 
+              className="h-8 w-auto"
+            />
+          </div>
+          <h1 className="text-white text-7xl font-light mb-4 text-center">
+            Leading Luxury Real Estate
           </h1>
           <p className="text-gray-300 text-xl">Leading Luxury Real Estate in Southern California</p>
         </div>
