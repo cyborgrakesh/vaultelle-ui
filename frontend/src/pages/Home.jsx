@@ -305,38 +305,82 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-6 lg:px-12 relative overflow-hidden" style={{ backgroundColor: '#A08C67' }}>
+      {/* CTA Section - List With Us */}
+      <section className="py-0 px-0 relative overflow-hidden bg-regal-bronze">
         <div className="max-w-[1920px] mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            <Link to="/sellers" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-0">
+            {/* List With Us */}
+            <Link 
+              to="/sellers" 
+              className="group relative flex items-center justify-center py-20 lg:py-24 border-r border-b lg:border-b-0 border-white/10 hover:bg-white/5 transition-all duration-300"
+            >
               <div className="text-center">
-                <p className="text-white text-3xl font-light">LIST</p>
-                <p className="text-white text-lg mt-2">WITH US</p>
+                <p className="text-white text-4xl lg:text-5xl font-light font-display tracking-wide leading-tight">
+                  List
+                </p>
+                <p className="text-white text-base lg:text-lg mt-2 font-sans tracking-widest">
+                  with Us
+                </p>
               </div>
             </Link>
-            <Link to="/buyers" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+
+            {/* Buy With Us */}
+            <Link 
+              to="/buyers" 
+              className="group relative flex items-center justify-center py-20 lg:py-24 border-r border-b lg:border-b-0 border-white/10 hover:bg-white/5 transition-all duration-300"
+            >
               <div className="text-center">
-                <p className="text-white text-3xl font-light">BUY</p>
-                <p className="text-white text-lg mt-2">WITH US</p>
+                <p className="text-white text-4xl lg:text-5xl font-light font-display tracking-wide leading-tight">
+                  Buy
+                </p>
+                <p className="text-white text-base lg:text-lg mt-2 font-sans tracking-widest">
+                  with Us
+                </p>
               </div>
             </Link>
-            <Link to="/offices" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+
+            {/* Our Offices */}
+            <Link 
+              to="/offices" 
+              className="group relative flex items-center justify-center py-20 lg:py-24 border-r border-b lg:border-b-0 border-white/10 hover:bg-white/5 transition-all duration-300"
+            >
               <div className="text-center">
-                <p className="text-white text-3xl font-light">OUR</p>
-                <p className="text-white text-lg mt-2">OFFICES</p>
+                <p className="text-white text-4xl lg:text-5xl font-light font-display tracking-wide leading-tight">
+                  Our
+                </p>
+                <p className="text-white text-base lg:text-lg mt-2 font-sans tracking-widest">
+                  Offices
+                </p>
               </div>
             </Link>
-            <Link to="/neighborhood-guides" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+
+            {/* Neighborhood Guides */}
+            <Link 
+              to="/neighborhood-guides" 
+              className="group relative flex items-center justify-center py-20 lg:py-24 border-r border-b lg:border-b-0 border-white/10 hover:bg-white/5 transition-all duration-300"
+            >
               <div className="text-center">
-                <p className="text-white text-3xl font-light">NEIGHBORHOOD</p>
-                <p className="text-white text-lg mt-2">GUIDES</p>
+                <p className="text-white text-4xl lg:text-5xl font-light font-display tracking-wide leading-tight">
+                  Neighborhood
+                </p>
+                <p className="text-white text-base lg:text-lg mt-2 font-sans tracking-widest">
+                  Guides
+                </p>
               </div>
             </Link>
-            <Link to="/home-valuation" className="group relative flex items-center justify-center py-16 hover:opacity-80 transition-opacity">
+
+            {/* Home Valuation */}
+            <Link 
+              to="/home-valuation" 
+              className="group relative flex items-center justify-center py-20 lg:py-24 hover:bg-white/5 transition-all duration-300"
+            >
               <div className="text-center">
-                <p className="text-white text-3xl font-light">HOME</p>
-                <p className="text-white text-lg mt-2">VALUATION</p>
+                <p className="text-white text-4xl lg:text-5xl font-light font-display tracking-wide leading-tight">
+                  Home
+                </p>
+                <p className="text-white text-base lg:text-lg mt-2 font-sans tracking-widest">
+                  Valuation
+                </p>
               </div>
             </Link>
           </div>
