@@ -87,6 +87,77 @@ code {
     }
 }
 
+/* Vaultelle Brand Utility Classes */
+@layer utilities {
+    .bg-velvet-night {
+        background-color: #121C2A;
+    }
+    
+    .bg-regal-bronze {
+        background-color: #A08C67;
+    }
+    
+    .bg-celestial-grey {
+        background-color: #C0C1C3;
+    }
+    
+    .text-velvet-night {
+        color: #121C2A;
+    }
+    
+    .text-regal-bronze {
+        color: #A08C67;
+    }
+    
+    .text-celestial-grey {
+        color: #C0C1C3;
+    }
+    
+    .border-regal-bronze {
+        border-color: #A08C67;
+    }
+    
+    .hover\:bg-regal-bronze:hover {
+        background-color: #A08C67;
+    }
+    
+    .hover\:bg-regal-bronze-dark:hover {
+        background-color: #8A7555;
+    }
+    
+    .hover\:text-regal-bronze:hover {
+        color: #A08C67;
+    }
+    
+    /* Override Tailwind red classes */
+    .bg-red-600,
+    .bg-red-700,
+    .bg-red-800 {
+        background-color: #A08C67 !important;
+    }
+    
+    .text-red-600,
+    .text-red-700,
+    .text-red-800 {
+        color: #A08C67 !important;
+    }
+    
+    .border-red-600 {
+        border-color: #A08C67 !important;
+    }
+    
+    .hover\:bg-red-600:hover,
+    .hover\:bg-red-700:hover,
+    .hover\:bg-red-800:hover {
+        background-color: #8A7555 !important;
+    }
+    
+    .hover\:text-red-600:hover,
+    .hover\:text-red-700:hover {
+        color: #A08C67 !important;
+    }
+}
+
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;
