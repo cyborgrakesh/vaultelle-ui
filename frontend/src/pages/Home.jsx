@@ -487,43 +487,88 @@ const Home = () => {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
-              <p className="text-gray-500 text-[10px] tracking-[0.3em] mb-6 font-light">AHEAD OF THE MARKET</p>
+              <div className="mb-6">
+                <p className="text-red-700 text-[10px] tracking-[0.3em] font-light">AHEAD OF THE MARKET</p>
+                <div className="w-16 h-0.5 bg-red-700 mt-1"></div>
+              </div>
               <h2 className="mb-12" style={{ lineHeight: '0.85' }}>
                 <span className="text-red-700 font-light block" style={{ fontSize: '5.5rem', letterSpacing: '0.02em' }}>DOWNLOAD</span>
                 <span className="text-red-700 font-bold block" style={{ fontSize: '5.5rem', letterSpacing: '0.02em' }}>OUR APP</span>
               </h2>
-              <div className="mb-12">
-                <p className="text-gray-800 text-xs font-semibold mb-3 tracking-wider">STAY AHEAD OF THE MARKET 24/7</p>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  The Vaultelle mobile app provides the most thorough home search functionality and the
-                  latest inventory directly from the MLS. Constant updates will always keep you ahead of the
-                  market as you locate new homes for sale, upcoming open houses, and recently sold properties.
-                </p>
+            </div>
+            <div className="flex flex-col justify-center lg:items-end">
+              <p className="text-gray-800 text-xs font-semibold mb-4 tracking-wider">STAY AHEAD OF THE MARKET 24/7</p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-8 max-w-md">
+                The Vaultelle mobile app provides the most thorough home search functionality and the
+                latest inventory directly from the MLS. Constant updates will always keep you ahead of the
+                market as you locate new homes for sale, upcoming open houses, and recently sold properties.
+              </p>
+              <div className="flex gap-4">
+                <a 
+                  href="#" 
+                  className="inline-block hover:opacity-80 transition-opacity"
+                >
+                  <img 
+                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="Download on the App Store"
+                    className="h-12"
+                  />
+                </a>
+                <a 
+                  href="#" 
+                  className="inline-block hover:opacity-80 transition-opacity"
+                >
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Get it on Google Play"
+                    className="h-12"
+                  />
+                </a>
               </div>
             </div>
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="w-[300px] aspect-[9/19] bg-black rounded-[3rem] p-3 shadow-2xl">
-                  <div className="w-full h-full bg-gray-900 rounded-[2.5rem] overflow-hidden relative">
-                    {/* Notch */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10"></div>
-                    {/* Screen Content */}
-                    <img 
-                      src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
-                      alt="App Interface"
-                      className="w-full h-full object-cover"
-                    />
-                    {/* Overlay showing app UI elements */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                    <div className="absolute top-12 left-4 right-4 z-20">
-                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 mb-2">
-                        <input 
-                          type="text" 
-                          placeholder="Search city, zip, address..." 
-                          className="w-full bg-white/20 text-white text-xs px-3 py-2 rounded-lg placeholder-white/70"
-                          disabled
-                        />
+          </div>
+          
+          {/* Phone Mockup - Centered below */}
+          <div className="flex justify-center mt-16">
+            <div className="relative">
+              <div className="w-[300px] aspect-[9/19] bg-black rounded-[3rem] p-3 shadow-2xl">
+                <div className="w-full h-full bg-gray-900 rounded-[2.5rem] overflow-hidden relative">
+                  {/* Notch */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-black rounded-b-3xl z-10"></div>
+                  {/* Screen Content */}
+                  <img 
+                    src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob21lJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyNzY0MTcxfDA&ixlib=rb-4.1.0&q=85"
+                    alt="App Interface"
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Overlay showing app UI elements */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                  <div className="absolute top-12 left-4 right-4 z-20">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 mb-2">
+                      <input 
+                        type="text" 
+                        placeholder="Search city, zip, address..." 
+                        className="w-full bg-white/20 text-white text-xs px-3 py-2 rounded-lg placeholder-white/70"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  {/* Property Cards Overlay */}
+                  <div className="absolute top-32 left-4 right-4 z-20 space-y-3">
+                    <div className="bg-white rounded-lg p-3 shadow-lg">
+                      <div className="flex gap-3">
+                        <div className="w-20 h-20 bg-gray-300 rounded"></div>
+                        <div className="flex-1">
+                          <p className="text-red-600 text-xs font-semibold">$9,995,000</p>
+                          <p className="text-gray-800 text-[10px] mt-1">11 days on market</p>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+                  {/* Save this search button */}
+                  <div className="absolute top-24 left-1/2 -translate-x-1/2 z-30">
+                    <div className="bg-red-600 text-white text-[10px] px-4 py-2 rounded-full shadow-lg">
+                      Save this search
                     </div>
                   </div>
                 </div>
