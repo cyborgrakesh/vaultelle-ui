@@ -9,8 +9,9 @@ module.exports = {
   	extend: {
   		fontFamily: {
   			'sans': ['Inter', 'sans-serif'],
-  			'display': ['Playfair Display', 'serif'],
+  			'display': ['Erstoria', 'serif'],
   			'body': ['Inter', 'sans-serif'],
+  			'erstoria': ['Erstoria', 'serif'],
   		},
   		letterSpacing: {
   			'vaultelle-tight': '-0.05em',
