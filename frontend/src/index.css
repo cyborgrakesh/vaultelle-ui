@@ -97,14 +97,20 @@ code {
 /* Vaultelle Brand Typography */
 @layer base {
   h1, .vaultelle-h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Erstoria', serif;
     font-weight: 400;
     letter-spacing: 0.08em;
   }
   
+  .vaultelle-display {
+    font-family: 'Erstoria', serif;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+  }
+  
   h2, h3, .vaultelle-h2, .vaultelle-h3 {
     font-family: 'Inter', sans-serif;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
   }
   
   p, .vaultelle-body {
