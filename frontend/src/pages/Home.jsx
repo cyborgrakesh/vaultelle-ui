@@ -267,13 +267,21 @@ const Home = () => {
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <img 
-                src="/logo/Vaultelle-Logo.svg" 
-                alt="Vaultelle" 
-                className="w-20 h-20 mb-8"
-              />
+              {/* Primary Lockup */}
+              <div className="flex items-center gap-4 mb-8">
+                <img 
+                  src="/logo/Vaultelle-Logo.svg" 
+                  alt="Vaultelle" 
+                  className="w-16 h-16"
+                />
+                <img 
+                  src="/logo/Vaultelle-Wordmark.svg" 
+                  alt="Vaultelle" 
+                  className="h-6 w-auto"
+                />
+              </div>
               <p className="text-white text-sm leading-relaxed mb-8">
-                The Vaultelle is a leading luxury real estate brokerage serving Los Angeles, Orange County, 
+                Vaultelle is a leading luxury real estate brokerage serving Los Angeles, Orange County, 
                 San Diego, and Cabo San Lucas. Led by President and Founder Michael Vaultier, the firm has achieved 
                 $4.5 billion in total sales and $500 million in active listings, closing hundreds of deals annually, 
                 including numerous record-breaking transactions. With offices in West Hollywood, Newport Beach, San Diego, 
