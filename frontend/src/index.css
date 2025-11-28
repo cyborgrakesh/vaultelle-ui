@@ -84,6 +84,37 @@ code {
     }
 }
 
+/* Vaultelle Brand Typography */
+@layer base {
+  h1, .vaultelle-h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+  }
+  
+  h2, h3, .vaultelle-h2, .vaultelle-h3 {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02em;
+  }
+  
+  p, .vaultelle-body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+  }
+  
+  .vaultelle-caption {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+  }
+  
+  .vaultelle-small {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+  }
+}
+
 /* Vaultelle Brand Utility Classes */
 @layer utilities {
     .bg-velvet-night {
