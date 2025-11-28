@@ -128,7 +128,7 @@ const Home = () => {
             </div>
             <Link
               to="/properties"
-              className="bg-red-600 text-white px-8 py-3 text-[11px] tracking-[0.2em] hover:bg-red-700 transition-colors flex items-center gap-2 font-light"
+              className="bg-red-600 text-white px-8 py-3 text-[11px] tracking-[0.2em] hover:bg-text-regal-bronze transition-colors flex items-center gap-2 font-light"
             >
               VIEW ALL <Plus className="w-4 h-4" />
             </Link>
@@ -171,10 +171,10 @@ const Home = () => {
             {/* Large Name on Left */}
             <div className="lg:col-span-4 flex flex-col">
               <p className="text-gray-500 text-xs tracking-[0.3em] mb-4">PRESIDENT & FOUNDER</p>
-              <h2 className="text-red-800 font-light" style={{ fontSize: '8rem', lineHeight: '0.9', letterSpacing: '0.02em' }}>
+              <h2 className="text-text-regal-bronze font-light" style={{ fontSize: '8rem', lineHeight: '0.9', letterSpacing: '0.02em' }}>
                 MICHAEL
               </h2>
-              <h2 className="text-red-800 font-bold" style={{ fontSize: '8rem', lineHeight: '0.9', letterSpacing: '0.02em' }}>
+              <h2 className="text-text-regal-bronze font-bold" style={{ fontSize: '8rem', lineHeight: '0.9', letterSpacing: '0.02em' }}>
                 VAULTIER
               </h2>
             </div>
@@ -206,7 +206,7 @@ const Home = () => {
               </div>
               <Link
                 to="/agents"
-                className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
+                className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
               >
                 LEARN MORE ABOUT MICHAEL <Plus className="inline w-4 h-4 ml-2" />
               </Link>
@@ -279,7 +279,7 @@ const Home = () => {
               </p>
               <Link
                 to="/about"
-                className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
+                className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
               >
                 READ MORE
               </Link>
@@ -391,7 +391,7 @@ const Home = () => {
             </p>
             <Link
               to="/concierge"
-              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
+              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
             >
               LEARN MORE
             </Link>
@@ -428,7 +428,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link
               to="/reviews"
-              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
+              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
             >
               READ MORE
             </Link>
@@ -474,7 +474,7 @@ const Home = () => {
           <div className="text-center">
             <Link
               to="/media"
-              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
+              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
             >
               READ MORE
             </Link>
@@ -488,12 +488,12 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <div className="mb-6">
-                <p className="text-red-700 text-[10px] tracking-[0.3em] font-light">AHEAD OF THE MARKET</p>
-                <div className="w-16 h-0.5 bg-red-700 mt-1"></div>
+                <p className="text-text-regal-bronze text-[10px] tracking-[0.3em] font-light">AHEAD OF THE MARKET</p>
+                <div className="w-16 h-0.5 bg-text-regal-bronze mt-1"></div>
               </div>
               <h2 className="mb-12" style={{ lineHeight: '0.85' }}>
-                <span className="text-red-700 font-light block" style={{ fontSize: '5.5rem', letterSpacing: '0.02em' }}>DOWNLOAD</span>
-                <span className="text-red-700 font-bold block" style={{ fontSize: '5.5rem', letterSpacing: '0.02em' }}>OUR APP</span>
+                <span className="text-text-regal-bronze font-light block" style={{ fontSize: '5.5rem', letterSpacing: '0.02em' }}>DOWNLOAD</span>
+                <span className="text-text-regal-bronze font-bold block" style={{ fontSize: '5.5rem', letterSpacing: '0.02em' }}>OUR APP</span>
               </h2>
             </div>
             <div className="flex flex-col justify-center lg:items-end">
@@ -601,7 +601,7 @@ const Home = () => {
               WebkitTextStroke: '2px #A08C67',
               letterSpacing: '0.05em'
             }}>LET'S GET </span>
-            <span className="font-bold text-red-700" style={{ 
+            <span className="font-bold text-text-regal-bronze" style={{ 
               fontSize: '7rem',
               letterSpacing: '0.05em'
             }}>SOCIAL</span>
@@ -645,7 +645,7 @@ const Home = () => {
           </div>
 
           <p className="text-center text-gray-800 text-xs max-w-4xl mx-auto font-semibold tracking-wider leading-relaxed">
-            THE VAULTELLE HAS <span className="font-bold text-red-700">MORE FOLLOWERS ON INSTAGRAM THAN ANY OTHER REAL ESTATE BROKERAGE</span> IN THE WORLD.
+            THE VAULTELLE HAS <span className="font-bold text-text-regal-bronze">MORE FOLLOWERS ON INSTAGRAM THAN ANY OTHER REAL ESTATE BROKERAGE</span> IN THE WORLD.
           </p>
         </div>
       </section>
@@ -674,7 +674,7 @@ const Home = () => {
             />
             <button
               type="submit"
-              className="w-full bg-red-600 text-white px-8 py-4 text-sm tracking-wider hover:bg-red-700 transition-colors"
+              className="w-full bg-red-600 text-white px-8 py-4 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
             >
               SUBSCRIBE
             </button>
