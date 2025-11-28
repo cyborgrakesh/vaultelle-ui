@@ -37,21 +37,21 @@ const Offices = () => {
                 </h2>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <MapPin className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
+                    <MapPin className="w-5 h-5 text-regal-bronze flex-shrink-0 mt-1" />
                     <div>
                       <p className="text-white text-sm">{office.address}</p>
                       <p className="text-gray-400 text-sm">{office.city}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <Phone className="w-5 h-5 text-red-600" />
-                    <a href={`tel:${office.phone}`} className="text-white text-sm hover:text-red-600 transition-colors">
+                    <Phone className="w-5 h-5 text-regal-bronze" />
+                    <a href={`tel:${office.phone}`} className="text-white text-sm hover:text-regal-bronze transition-colors">
                       {office.phone}
                     </a>
                   </div>
                   <div className="flex items-center gap-4">
-                    <Mail className="w-5 h-5 text-red-600" />
-                    <a href="mailto:office@ogroup.com" className="text-white text-sm hover:text-red-600 transition-colors">
+                    <Mail className="w-5 h-5 text-regal-bronze" />
+                    <a href="mailto:office@ogroup.com" className="text-white text-sm hover:text-regal-bronze transition-colors">
                       office@ogroup.com
                     </a>
                   </div>

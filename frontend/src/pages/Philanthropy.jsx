@@ -97,7 +97,7 @@ const Philanthropy = () => {
                   href="https://foodonfoot.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-red-600 text-white px-6 py-3 text-sm hover:bg-red-700 transition-colors"
+                  className="inline-block bg-regal-bronze text-white px-6 py-3 text-sm hover:bg-regal-bronze-dark transition-colors"
                 >
                   LEARN MORE
                 </a>
@@ -110,7 +110,7 @@ const Philanthropy = () => {
                 </p>
                 <a
                   href="#"
-                  className="inline-block bg-red-600 text-white px-6 py-3 text-sm hover:bg-red-700 transition-colors"
+                  className="inline-block bg-regal-bronze text-white px-6 py-3 text-sm hover:bg-regal-bronze-dark transition-colors"
                 >
                   LEARN MORE
                 </a>

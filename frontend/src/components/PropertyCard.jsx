@@ -19,7 +19,7 @@ const PropertyCard = ({ property }) => {
           {/* Price */}
           <div className="mb-3">
             <p className="text-white text-2xl font-light">{property.price}</p>
-            <div className="w-12 h-0.5 bg-red-600 mt-2" />
+            <div className="w-12 h-0.5 bg-regal-bronze mt-2" />
           </div>
 
           {/* Address */}

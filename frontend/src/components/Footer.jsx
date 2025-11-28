@@ -12,12 +12,12 @@ const Footer = () => {
           {/* Logo & Contact */}
           <div>
             <Link to="/" className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 rounded-full border-2 border-red-600 flex items-center justify-center">
-                <span className="text-red-600 font-bold text-xl">V</span>
+              <div className="w-10 h-10 rounded-full border-2 border-regal-bronze flex items-center justify-center">
+                <span className="text-regal-bronze font-bold text-xl">V</span>
               </div>
             </Link>
             <p className="text-sm mb-4">
-              <a href="mailto:office@vaultelle.com" className="hover:text-red-600 transition-colors">
+              <a href="mailto:office@vaultelle.com" className="hover:text-regal-bronze transition-colors">
                 office@vaultelle.com
               </a>
             </p>
@@ -30,7 +30,7 @@ const Footer = () => {
               <h3 className="text-sm font-semibold mb-4 tracking-wider">{office.name.toUpperCase()}</h3>
               <p className="text-sm text-gray-400 mb-2">{office.address}</p>
               <p className="text-sm text-gray-400 mb-3">{office.city}</p>
-              <a href={`tel:${office.phone}`} className="text-sm hover:text-red-600 transition-colors">
+              <a href={`tel:${office.phone}`} className="text-sm hover:text-regal-bronze transition-colors">
                 {office.phone}
               </a>
             </div>
@@ -41,22 +41,22 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <p className="text-sm mb-4">Follow Us On:</p>
           <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-red-600 transition-colors">
+            <a href="#" className="text-white hover:text-regal-bronze transition-colors">
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#" className="text-white hover:text-red-600 transition-colors">
+            <a href="#" className="text-white hover:text-regal-bronze transition-colors">
               <Twitter className="w-5 h-5" />
             </a>
-            <a href="#" className="text-white hover:text-red-600 transition-colors">
+            <a href="#" className="text-white hover:text-regal-bronze transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="#" className="text-white hover:text-red-600 transition-colors">
+            <a href="#" className="text-white hover:text-regal-bronze transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="#" className="text-white hover:text-red-600 transition-colors">
+            <a href="#" className="text-white hover:text-regal-bronze transition-colors">
               <Youtube className="w-5 h-5" />
             </a>
-            <a href="mailto:office@vaultelle.com" className="text-white hover:text-red-600 transition-colors">
+            <a href="mailto:office@vaultelle.com" className="text-white hover:text-regal-bronze transition-colors">
               <Mail className="w-5 h-5" />
             </a>
           </div>
@@ -69,10 +69,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
             <p>&copy; {new Date().getFullYear()} The Vaultelle. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy" className="hover:text-red-600 transition-colors">
+              <Link to="/privacy" className="hover:text-regal-bronze transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="hover:text-red-600 transition-colors">
+              <Link to="/terms" className="hover:text-regal-bronze transition-colors">
                 Terms of Service
               </Link>
             </div>

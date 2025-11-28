@@ -21,7 +21,7 @@ const SocialSidebar = () => {
               <a
                 key={index}
                 href={social.href}
-                className="text-white hover:text-red-600 transition-colors"
+                className="text-white hover:text-regal-bronze transition-colors"
                 aria-label={social.label}
               >
                 <Icon className="w-5 h-5" />

@@ -29,19 +29,19 @@ const Sellers = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <p className="text-red-600 text-5xl font-light mb-3">$4.5B+</p>
+              <p className="text-regal-bronze text-5xl font-light mb-3">$4.5B+</p>
               <p className="text-white text-sm tracking-wider">Total Sales</p>
             </div>
             <div className="text-center">
-              <p className="text-red-600 text-5xl font-light mb-3">$500M+</p>
+              <p className="text-regal-bronze text-5xl font-light mb-3">$500M+</p>
               <p className="text-white text-sm tracking-wider">Active Listings</p>
             </div>
             <div className="text-center">
-              <p className="text-red-600 text-5xl font-light mb-3">17M+</p>
+              <p className="text-regal-bronze text-5xl font-light mb-3">17M+</p>
               <p className="text-white text-sm tracking-wider">Social Reach</p>
             </div>
             <div className="text-center">
-              <p className="text-red-600 text-5xl font-light mb-3">2,000+</p>
+              <p className="text-regal-bronze text-5xl font-light mb-3">2,000+</p>
               <p className="text-white text-sm tracking-wider">Closed Deals</p>
             </div>
           </div>
@@ -81,22 +81,22 @@ const Sellers = () => {
           {/* Services */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
             <div className="text-center p-8 bg-gray-900">
-              <Camera className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <Camera className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Professional Media</h3>
               <p className="text-gray-400 text-sm">High-end photography, videography, and virtual tours</p>
             </div>
             <div className="text-center p-8 bg-gray-900">
-              <Users className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <Users className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Expert Team</h3>
               <p className="text-gray-400 text-sm">Award-winning agents with proven track records</p>
             </div>
             <div className="text-center p-8 bg-gray-900">
-              <Globe className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <Globe className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Global Exposure</h3>
               <p className="text-gray-400 text-sm">International marketing through luxury networks</p>
             </div>
             <div className="text-center p-8 bg-gray-900">
-              <DollarSign className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <DollarSign className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Maximum Value</h3>
               <p className="text-gray-400 text-sm">Strategic pricing and negotiation expertise</p>
             </div>
@@ -116,7 +116,7 @@ const Sellers = () => {
                 </p>
                 <Link
                   to="/concierge"
-                  className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-red-700 transition-colors"
+                  className="inline-block bg-regal-bronze text-white px-8 py-3 text-sm tracking-wider hover:bg-regal-bronze-dark transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -134,7 +134,7 @@ const Sellers = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 lg:px-12 bg-red-600">
+      <section className="py-24 px-6 lg:px-12 bg-regal-bronze">
         <div className="max-w-[1400px] mx-auto text-center">
           <h2 className="text-white text-5xl font-light mb-6">
             Ready to <span className="font-bold">List Your Property?</span>
@@ -143,13 +143,13 @@ const Sellers = () => {
           <div className="flex justify-center gap-4">
             <Link
               to="/home-valuation"
-              className="bg-white text-red-600 px-8 py-4 text-sm tracking-wider hover:bg-gray-100 transition-colors"
+              className="bg-white text-regal-bronze px-8 py-4 text-sm tracking-wider hover:bg-gray-100 transition-colors"
             >
               GET HOME VALUATION
             </Link>
             <Link
               to="/contact"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm tracking-wider hover:bg-white hover:text-red-600 transition-colors"
+              className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm tracking-wider hover:bg-white hover:text-regal-bronze transition-colors"
             >
               CONTACT US
             </Link>

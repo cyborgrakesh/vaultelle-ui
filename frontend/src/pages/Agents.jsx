@@ -31,7 +31,7 @@ const Agents = () => {
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 space-y-3">
                     <a
                       href="mailto:agent@ogroup.com"
-                      className="flex items-center justify-center gap-2 bg-red-600 text-white px-6 py-3 text-sm hover:bg-red-700 transition-colors"
+                      className="flex items-center justify-center gap-2 bg-regal-bronze text-white px-6 py-3 text-sm hover:bg-regal-bronze-dark transition-colors"
                     >
                       <Mail className="w-4 h-4" />
                       EMAIL
@@ -50,7 +50,7 @@ const Agents = () => {
               {/* Info */}
               <div>
                 <h2 className="text-white text-2xl font-light mb-2">{agent.name}</h2>
-                <p className="text-red-600 text-sm mb-4">{agent.title}</p>
+                <p className="text-regal-bronze text-sm mb-4">{agent.title}</p>
                 <p className="text-gray-400 text-sm leading-relaxed">{agent.bio}</p>
               </div>
             </div>

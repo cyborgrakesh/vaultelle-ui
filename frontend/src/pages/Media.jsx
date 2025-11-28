@@ -34,7 +34,7 @@ const Media = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-500" />
-                <div className="absolute top-4 right-4 bg-red-600 w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute top-4 right-4 bg-regal-bronze w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <ExternalLink className="w-5 h-5 text-white" />
                 </div>
               </div>
@@ -42,7 +42,7 @@ const Media = () => {
               {/* Content */}
               <div className="p-6 bg-gray-900 group-hover:bg-gray-800 transition-colors">
                 <p className="text-gray-400 text-xs mb-3 tracking-wider">{article.source.toUpperCase()}</p>
-                <h3 className="text-white text-base leading-relaxed group-hover:text-red-600 transition-colors">
+                <h3 className="text-white text-base leading-relaxed group-hover:text-regal-bronze transition-colors">
                   {article.title}
                 </h3>
               </div>
@@ -63,7 +63,7 @@ const Media = () => {
               href="https://www.netflix.com/title/80223108"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-red-600 px-8 py-4 text-sm tracking-wider hover:bg-gray-100 transition-colors"
+              className="bg-white text-regal-bronze px-8 py-4 text-sm tracking-wider hover:bg-gray-100 transition-colors"
             >
               WATCH SELLING SUNSET
             </a>
@@ -71,7 +71,7 @@ const Media = () => {
               href="https://www.netflix.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm tracking-wider hover:bg-white hover:text-red-600 transition-colors"
+              className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm tracking-wider hover:bg-white hover:text-regal-bronze transition-colors"
             >
               WATCH SELLING THE OC
             </a>

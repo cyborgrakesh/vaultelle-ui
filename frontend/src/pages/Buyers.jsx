@@ -55,22 +55,22 @@ const Buyers = () => {
           {/* Features */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
             <div className="text-center p-8 bg-gray-900">
-              <Search className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <Search className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Personalized Search</h3>
               <p className="text-gray-400 text-sm">Tailored property searches based on your specific needs and preferences</p>
             </div>
             <div className="text-center p-8 bg-gray-900">
-              <Home className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <Home className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Exclusive Access</h3>
               <p className="text-gray-400 text-sm">First look at off-market properties and new listings before they hit the market</p>
             </div>
             <div className="text-center p-8 bg-gray-900">
-              <TrendingUp className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <TrendingUp className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Market Expertise</h3>
               <p className="text-gray-400 text-sm">Deep knowledge of local market trends and property values</p>
             </div>
             <div className="text-center p-8 bg-gray-900">
-              <Award className="w-12 h-12 text-red-600 mx-auto mb-4" />
+              <Award className="w-12 h-12 text-regal-bronze mx-auto mb-4" />
               <h3 className="text-white text-lg font-semibold mb-3">Award-Winning Service</h3>
               <p className="text-gray-400 text-sm">Recognized as top agents in Los Angeles and Southern California</p>
             </div>
@@ -85,13 +85,13 @@ const Buyers = () => {
             <div className="flex justify-center gap-4">
               <Link
                 to="/properties"
-                className="bg-white text-red-600 px-8 py-4 text-sm tracking-wider hover:bg-gray-100 transition-colors"
+                className="bg-white text-regal-bronze px-8 py-4 text-sm tracking-wider hover:bg-gray-100 transition-colors"
               >
                 VIEW PROPERTIES
               </Link>
               <Link
                 to="/contact"
-                className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm tracking-wider hover:bg-white hover:text-red-600 transition-colors"
+                className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm tracking-wider hover:bg-white hover:text-regal-bronze transition-colors"
               >
                 CONTACT US
               </Link>

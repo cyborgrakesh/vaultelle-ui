@@ -81,13 +81,13 @@ const Home = () => {
 
         <button
           onClick={prevSlide}
-          className="absolute left-8 top-1/2 -translate-y-1/2 text-white hover:text-red-600 transition-colors z-10"
+          className="absolute left-8 top-1/2 -translate-y-1/2 text-white hover:text-regal-bronze transition-colors z-10"
         >
           <ChevronLeft className="w-12 h-12" />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-8 top-1/2 -translate-y-1/2 text-white hover:text-red-600 transition-colors z-10"
+          className="absolute right-8 top-1/2 -translate-y-1/2 text-white hover:text-regal-bronze transition-colors z-10"
         >
           <ChevronRight className="w-12 h-12" />
         </button>
@@ -95,16 +95,16 @@ const Home = () => {
         <div className="absolute right-12 bottom-20 text-right z-10">
           <p className="text-white text-[10px] tracking-[0.4em] mb-8 font-light">OUR OFFICES</p>
           <div className="space-y-3">
-            <Link to="/offices/los-angeles" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-red-600 transition-colors">
+            <Link to="/offices/los-angeles" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-regal-bronze transition-colors">
               LOS ANGELES
             </Link>
-            <Link to="/offices/newport-beach" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-red-600 transition-colors">
+            <Link to="/offices/newport-beach" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-regal-bronze transition-colors">
               NEWPORT BEACH
             </Link>
-            <Link to="/offices/san-diego" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-red-600 transition-colors">
+            <Link to="/offices/san-diego" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-regal-bronze transition-colors">
               SAN DIEGO
             </Link>
-            <Link to="/offices/cabo" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-red-600 transition-colors">
+            <Link to="/offices/cabo" className="block text-white text-5xl font-light tracking-[0.05em] hover:text-regal-bronze transition-colors">
               CABO SAN LUCAS
             </Link>
           </div>
@@ -128,7 +128,7 @@ const Home = () => {
             </div>
             <Link
               to="/properties"
-              className="bg-red-600 text-white px-8 py-3 text-[11px] tracking-[0.2em] hover:bg-text-regal-bronze transition-colors flex items-center gap-2 font-light"
+              className="bg-regal-bronze text-white px-8 py-3 text-[11px] tracking-[0.2em] hover:bg-text-regal-bronze transition-colors flex items-center gap-2 font-light"
             >
               VIEW ALL <Plus className="w-4 h-4" />
             </Link>
@@ -206,7 +206,7 @@ const Home = () => {
               </div>
               <Link
                 to="/agents"
-                className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
+                className="inline-block bg-regal-bronze text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
               >
                 LEARN MORE ABOUT MICHAEL <Plus className="inline w-4 h-4 ml-2" />
               </Link>
@@ -232,30 +232,30 @@ const Home = () => {
             Why Work<br />
             <span className="font-bold">With Us</span>
           </h2>
-          <p className="text-red-600 text-center text-sm tracking-[0.3em] mb-12">OUR NUMBERS</p>
+          <p className="text-regal-bronze text-center text-sm tracking-[0.3em] mb-12">OUR NUMBERS</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             <div className="text-center">
-              <p className="text-red-600 text-4xl font-light mb-2">$4.5B+</p>
+              <p className="text-regal-bronze text-4xl font-light mb-2">$4.5B+</p>
               <p className="text-white text-xs tracking-wider">Total Sales</p>
             </div>
             <div className="text-center">
-              <p className="text-red-600 text-4xl font-light mb-2">210K+</p>
+              <p className="text-regal-bronze text-4xl font-light mb-2">210K+</p>
               <p className="text-white text-xs tracking-wider">Email Database</p>
             </div>
             <div className="text-center">
-              <p className="text-red-600 text-4xl font-light mb-2">17M+</p>
+              <p className="text-regal-bronze text-4xl font-light mb-2">17M+</p>
               <p className="text-white text-xs tracking-wider">Social Media Followers</p>
             </div>
             <div className="text-center">
-              <p className="text-red-600 text-4xl font-light mb-2">$500M+</p>
+              <p className="text-regal-bronze text-4xl font-light mb-2">$500M+</p>
               <p className="text-white text-xs tracking-wider">Active Listings</p>
             </div>
             <div className="text-center">
-              <p className="text-red-600 text-4xl font-light mb-2">1.5M+</p>
+              <p className="text-regal-bronze text-4xl font-light mb-2">1.5M+</p>
               <p className="text-white text-xs tracking-wider">Annual Visitors</p>
             </div>
             <div className="text-center">
-              <p className="text-red-600 text-4xl font-light mb-2">2,000+</p>
+              <p className="text-regal-bronze text-4xl font-light mb-2">2,000+</p>
               <p className="text-white text-xs tracking-wider">Closed Transactions</p>
             </div>
           </div>
@@ -267,8 +267,8 @@ const Home = () => {
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="w-20 h-20 rounded-full border-2 border-red-600 flex items-center justify-center mb-8">
-                <span className="text-red-600 font-bold text-3xl">V</span>
+              <div className="w-20 h-20 rounded-full border-2 border-regal-bronze flex items-center justify-center mb-8">
+                <span className="text-regal-bronze font-bold text-3xl">V</span>
               </div>
               <p className="text-white text-sm leading-relaxed mb-8">
                 The Vaultelle is a leading luxury real estate brokerage serving Los Angeles, Orange County, 
@@ -279,7 +279,7 @@ const Home = () => {
               </p>
               <Link
                 to="/about"
-                className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
+                className="inline-block bg-regal-bronze text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
               >
                 READ MORE
               </Link>
@@ -341,7 +341,7 @@ const Home = () => {
               White-Glove<br />
               <span className="font-bold">Concierge</span>
             </h2>
-            <p className="text-red-600 text-sm tracking-[0.3em]">TOP-TIER SERVICES</p>
+            <p className="text-regal-bronze text-sm tracking-[0.3em]">TOP-TIER SERVICES</p>
           </div>
 
           <div className="max-w-4xl mx-auto mb-12">
@@ -391,7 +391,7 @@ const Home = () => {
             </p>
             <Link
               to="/concierge"
-              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
+              className="inline-block bg-regal-bronze text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
             >
               LEARN MORE
             </Link>
@@ -405,7 +405,7 @@ const Home = () => {
           <h2 className="text-white text-5xl font-light text-center mb-4">
             What Clients <span className="italic">Are</span> Saying
           </h2>
-          <p className="text-red-600 text-center text-xl font-semibold mb-16">Client Rave Reviews</p>
+          <p className="text-regal-bronze text-center text-xl font-semibold mb-16">Client Rave Reviews</p>
 
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -428,7 +428,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link
               to="/reviews"
-              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
+              className="inline-block bg-regal-bronze text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
             >
               READ MORE
             </Link>
@@ -463,7 +463,7 @@ const Home = () => {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-400 text-xs mb-3 tracking-wider">{article.source.toUpperCase()}</p>
-                  <p className="text-black text-sm leading-relaxed group-hover:text-red-600 transition-colors">
+                  <p className="text-black text-sm leading-relaxed group-hover:text-regal-bronze transition-colors">
                     {article.title}
                   </p>
                 </div>
@@ -474,7 +474,7 @@ const Home = () => {
           <div className="text-center">
             <Link
               to="/media"
-              className="inline-block bg-red-600 text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
+              className="inline-block bg-regal-bronze text-white px-8 py-3 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
             >
               READ MORE
             </Link>
@@ -559,7 +559,7 @@ const Home = () => {
                       <div className="flex gap-3">
                         <div className="w-20 h-20 bg-gray-300 rounded"></div>
                         <div className="flex-1">
-                          <p className="text-red-600 text-xs font-semibold">$9,995,000</p>
+                          <p className="text-regal-bronze text-xs font-semibold">$9,995,000</p>
                           <p className="text-gray-800 text-[10px] mt-1">11 days on market</p>
                         </div>
                       </div>
@@ -567,7 +567,7 @@ const Home = () => {
                   </div>
                   {/* Save this search button */}
                   <div className="absolute top-24 left-1/2 -translate-x-1/2 z-30">
-                    <div className="bg-red-600 text-white text-[10px] px-4 py-2 rounded-full shadow-lg">
+                    <div className="bg-regal-bronze text-white text-[10px] px-4 py-2 rounded-full shadow-lg">
                       Save this search
                     </div>
                   </div>
@@ -674,7 +674,7 @@ const Home = () => {
             />
             <button
               type="submit"
-              className="w-full bg-red-600 text-white px-8 py-4 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
+              className="w-full bg-regal-bronze text-white px-8 py-4 text-sm tracking-wider hover:bg-text-regal-bronze transition-colors"
             >
               SUBSCRIBE
             </button>

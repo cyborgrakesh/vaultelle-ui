@@ -110,7 +110,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-red-600 text-white px-8 py-4 text-sm tracking-wider hover:bg-red-700 transition-colors"
+                className="w-full bg-regal-bronze text-white px-8 py-4 text-sm tracking-wider hover:bg-regal-bronze-dark transition-colors"
               >
                 SEND MESSAGE
               </button>
@@ -124,19 +124,19 @@ const Contact = () => {
             </h2>
             <div className="space-y-8 mb-12">
               <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 text-red-600 flex-shrink-0" />
+                <Mail className="w-6 h-6 text-regal-bronze flex-shrink-0" />
                 <div>
                   <h3 className="text-white text-sm font-semibold mb-2">Email</h3>
-                  <a href="mailto:office@ogroup.com" className="text-gray-400 hover:text-red-600 transition-colors">
+                  <a href="mailto:office@ogroup.com" className="text-gray-400 hover:text-regal-bronze transition-colors">
                     office@ogroup.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-red-600 flex-shrink-0" />
+                <Phone className="w-6 h-6 text-regal-bronze flex-shrink-0" />
                 <div>
                   <h3 className="text-white text-sm font-semibold mb-2">Phone</h3>
-                  <a href="tel:+13102814595" className="text-gray-400 hover:text-red-600 transition-colors">
+                  <a href="tel:+13102814595" className="text-gray-400 hover:text-regal-bronze transition-colors">
                     +1 (310) 281-4595
                   </a>
                 </div>
@@ -148,11 +148,11 @@ const Contact = () => {
             </h3>
             <div className="space-y-6">
               {offices.map((office) => (
-                <div key={office.id} className="border-l-2 border-red-600 pl-6">
+                <div key={office.id} className="border-l-2 border-regal-bronze pl-6">
                   <h4 className="text-white text-sm font-semibold mb-2">{office.name}</h4>
                   <p className="text-gray-400 text-sm mb-1">{office.address}</p>
                   <p className="text-gray-400 text-sm mb-2">{office.city}</p>
-                  <a href={`tel:${office.phone}`} className="text-red-600 text-sm hover:underline">
+                  <a href={`tel:${office.phone}`} className="text-regal-bronze text-sm hover:underline">
                     {office.phone}
                   </a>
                 </div>
