@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Vaultelle Brand Fonts */
+@font-face {
+    font-family: 'Erstoria';
+    src: url('/fonts/Erstoria.otf') format('opentype'),
+         url('/fonts/Erstoria.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
