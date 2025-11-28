@@ -1,7 +1,7 @@
 /* Remove default center alignment */
 .App {
   min-height: 100vh;
-  background-color: #000000;
+  background-color: #121C2A; /* Velvet Night */
 }
 
 /* Smooth scrolling */
@@ -15,16 +15,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #121C2A; /* Velvet Night */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C41E3A;
+  background: #A08C67; /* Regal Bronze */
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #A01828;
+  background: #8A7555; /* Darker Regal Bronze */
 }
 
 /* Override default transitions */
