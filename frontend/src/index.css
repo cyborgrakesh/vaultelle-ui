@@ -94,8 +94,9 @@ code {
     }
 }
 
-/* Vaultelle Brand Typography */
+/* Vaultelle Brand Typography - Per Brand Guidelines */
 @layer base {
+  /* Display H1 - Erstoria, large, +8 to +12 tracking */
   h1, .vaultelle-h1 {
     font-family: 'Erstoria', serif;
     font-weight: 400;
@@ -108,25 +109,29 @@ code {
     letter-spacing: 0.12em;
   }
   
+  /* H2 and H3 - General Sans, 0 to +4 tracking */
   h2, h3, .vaultelle-h2, .vaultelle-h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'General Sans', sans-serif;
     letter-spacing: 0.04em;
   }
   
+  /* Body - General Sans Regular, 0 to -5 tracking */
   p, .vaultelle-body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'General Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 0em;
   }
   
+  /* Captions/Labels - General Sans Medium, Tabular numerals */
   .vaultelle-caption {
-    font-family: 'Inter', sans-serif;
+    font-family: 'General Sans', sans-serif;
     font-weight: 500;
     font-variant-numeric: tabular-nums;
   }
   
+  /* Small Print - General Sans, stepped down by 2, generous line height */
   .vaultelle-small {
-    font-family: 'Inter', sans-serif;
+    font-family: 'General Sans', sans-serif;
     line-height: 1.8;
   }
 }
