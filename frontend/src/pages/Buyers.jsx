@@ -77,7 +77,7 @@ const Buyers = () => {
           </div>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-red-600 to-red-700 p-12 text-center">
+          <div className="bg-regal-bronze p-12 text-center">
             <h2 className="text-white text-4xl font-light mb-6">
               Ready to Find <span className="font-bold">Your Dream Home?</span>
             </h2>
@@ -85,13 +85,13 @@ const Buyers = () => {
             <div className="flex justify-center gap-4">
               <Link
                 to="/properties"
-                className="bg-white text-regal-bronze px-8 py-4 text-sm tracking-wider hover:bg-gray-100 transition-colors"
+                className="bg-white text-velvet-night px-8 py-4 text-sm tracking-wider hover:bg-celestial-grey transition-colors"
               >
                 VIEW PROPERTIES
               </Link>
               <Link
                 to="/contact"
-                className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm tracking-wider hover:bg-white hover:text-regal-bronze transition-colors"
+                className="bg-transparent border-2 border-white text-white px-8 py-4 text-sm tracking-wider hover:bg-white hover:text-velvet-night transition-colors"
               >
                 CONTACT US
               </Link>
