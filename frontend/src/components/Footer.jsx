@@ -12,9 +12,11 @@ const Footer = () => {
           {/* Logo & Contact */}
           <div>
             <Link to="/" className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 rounded-full border-2 border-regal-bronze flex items-center justify-center">
-                <span className="text-regal-bronze font-bold text-xl">V</span>
-              </div>
+              <img 
+                src="/logo/Vaultelle-Logo.svg" 
+                alt="Vaultelle" 
+                className="w-10 h-10"
+              />
             </Link>
             <p className="text-sm mb-4">
               <a href="mailto:office@vaultelle.com" className="hover:text-regal-bronze transition-colors">
