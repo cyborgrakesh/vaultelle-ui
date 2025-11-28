@@ -14,9 +14,11 @@ const About = () => {
         />
         <div className="absolute inset-0 bg-velvet-night bg-opacity-60" />
         <div className="relative z-10 text-center">
-          <div className="w-24 h-24 rounded-full border-2 border-regal-bronze flex items-center justify-center mx-auto mb-8">
-            <span className="text-regal-bronze font-bold text-4xl">V</span>
-          </div>
+          <img 
+            src="/logo/Vaultelle-Logo.svg" 
+            alt="Vaultelle" 
+            className="w-24 h-24 mx-auto mb-8"
+          />
           <h1 className="text-white text-7xl font-light mb-4">
             The <span className="font-bold">Vaultelle</span>
           </h1>
