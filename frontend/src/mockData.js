@@ -214,44 +214,44 @@ export const offices = [
 export const agents = [
   {
     id: 1,
-    name: 'Jason Oppenheim',
+    name: 'Michael Vaultier',
     title: 'President & Founder',
-    image: 'https://images.unsplash.com/photo-1762341116674-784c5dbedeb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBlcnNvbnxlbnwwfHx8fDE3NjI3NjQxODB8MA&ixlib=rb-4.1.0&q=85',
-    bio: 'As President and Founder of The Oppenheim Group, Jason leads a team responsible for representing buyers and sellers of distinguished properties throughout Southern California.'
+    image: 'https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxidXNpbmVzc21hbiUyMGhlYWRzaG90fGVufDB8fHx8MTc2NDMyMzY3OHww&ixlib=rb-4.1.0&q=85',
+    bio: 'As President and Founder of Vaultelle, Michael leads a team responsible for representing buyers and sellers of distinguished properties throughout Southern California.'
   },
   {
     id: 2,
-    name: 'Mary Fitzgerald',
+    name: 'James Hartwell',
     title: 'Senior Agent',
-    image: 'https://images.unsplash.com/photo-1762341120638-b5b9358ef571?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBlcnNvbnxlbnwwfHx8fDE3NjI3NjQxODB8MA&ixlib=rb-4.1.0&q=85',
-    bio: 'Mary brings years of experience in luxury real estate with a focus on client satisfaction.'
+    image: 'https://images.unsplash.com/photo-1651684215020-f7a5b6610f23?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHxidXNpbmVzc21hbiUyMGhlYWRzaG90fGVufDB8fHx8MTc2NDMyMzY3OHww&ixlib=rb-4.1.0&q=85',
+    bio: 'James brings years of experience in luxury real estate with a focus on precision and client satisfaction.'
   },
   {
     id: 3,
-    name: 'Chrishell Stause',
-    title: 'Luxury Agent',
-    image: 'https://images.unsplash.com/photo-1762341118883-13bbd9d79927?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBlcnNvbnxlbnwwfHx8fDE3NjI3NjQxODB8MA&ixlib=rb-4.1.0&q=85',
-    bio: 'Chrishell specializes in high-end properties and celebrity clientele.'
+    name: 'Alexander Chen',
+    title: 'Luxury Property Specialist',
+    image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg',
+    bio: 'Alexander specializes in high-end properties and provides exceptional service to discerning clients.'
   },
   {
     id: 4,
-    name: 'Heather Rae Young',
+    name: 'David Morrison',
     title: 'Senior Agent',
-    image: 'https://images.unsplash.com/photo-1758518727888-ffa196002e59?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBlcnNvbnxlbnwwfHx8fDE3NjI3NjQxODB8MA&ixlib=rb-4.1.0&q=85',
-    bio: 'Heather brings a unique blend of professionalism and personal touch to every transaction.'
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQzMjM2ODN8MA&ixlib=rb-4.1.0&q=85',
+    bio: 'David brings a unique blend of professionalism and personal attention to every transaction.'
   },
   {
     id: 5,
-    name: 'Amanza Smith',
-    title: 'Agent & Interior Designer',
-    image: 'https://images.pexels.com/photos/34639577/pexels-photo-34639577.jpeg',
-    bio: 'Amanza combines her interior design expertise with real estate knowledge.'
+    name: 'Robert Sterling',
+    title: 'Investment Properties Advisor',
+    image: 'https://images.unsplash.com/photo-1578758837674-93ed0ab5fbab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxtYWxlJTIwZXhlY3V0aXZlfGVufDB8fHx8MTc2NDMyMzY4OXww&ixlib=rb-4.1.0&q=85',
+    bio: 'Robert combines strategic insight with deep market knowledge to guide investment opportunities.'
   },
   {
     id: 6,
-    name: 'Emma Hernan',
+    name: 'Thomas Blake',
     title: 'Luxury Agent',
-    image: 'https://images.pexels.com/photos/34632577/pexels-photo-34632577.jpeg',
-    bio: 'Emma specializes in high-value properties and investment opportunities.'
+    image: 'https://images.pexels.com/photos/3778673/pexels-photo-3778673.jpeg',
+    bio: 'Thomas specializes in high-value properties and delivers exceptional results for his clients.'
   }
 ];
